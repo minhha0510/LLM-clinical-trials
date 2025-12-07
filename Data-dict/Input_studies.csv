@@ -1,0 +1,39 @@
+Source file,Variable name,Description,Variable type,Example,Categories ,Preprocessing needed,Expected missing rate,notes
+detailed_descriptions.txt,description,A single text column that provides a detailed description of the study protocol.,text ,CD4-specific CAR is a chimeric antigen receptor immunotherapy treatment designed to treat lymphoma/leukemia expressing CD4 antigen. CD4+ T cell lymphomas are a subset of leukemias and lymphomas that are positive for the surface protein CD4. The purpose of this study is to evaluate the efficacy and safety of CD4 CAR T cells.,,,,Some terminated trials embed their stop reasons in the detailed description. This field may contain post-trial information and requires manual screening before inclusion in the LLM input.
+brief_summaries.txt,description,A single text column that provides a brief description of the study.,text ,"This is a phase I, interventional, single arm, open label, treatment study to evaluate the safety and tolerability of CD4 CAR T cells in patients with relapsed and/or refractory T cell lymphoma.",,,,
+designs.txt,allocation,,categorical,,"NON_RANDOMIZED
+RANDOMIZED ",No,,
+designs.txt,intervention_model,,categorical,,"CROSSOVER    
+FACTORIAL     
+PARALLEL   
+SEQUENTIAL
+SINGLE_GROUP ",No,,
+designs.txt,masking,,categorical,,"DOUBLE      
+NONE 
+QUADRUPLE    
+SINGLE    
+TRIPLE ",No,,"Detailed masking information is available for four roles (subject, caregiver, investigator, outcomes assessor). These may be useful features, and we may consider including them in the LLM input."
+calculated_values.txt,number_of_primary_outcomes_to_measure,,numeric,,,No,,
+calculated_values.txt,number_of_secondary_outcomes_to_measure,,numeric,,,No,,
+calculated_values.txt,number_of_other_outcomes_to_measure,,numeric,,,No,,
+eligibilities.txt,gender,,categorical,,"ALL 
+FEMALE   
+MALE ",No,,
+eligibilities.txt,minimum_age,,text ,18 Years,,Converted all time values to numeric and standardized the unit to years.,,
+eligibilities.txt,maximum_age,,text ,45Years,,Converted all time values to numeric and standardized the unit to years.,,
+eligibilities.txt,healthy_volunteers,,binary,,t/f,No,,
+eligibilities.txt,criteria,,text ,"Inclusion Criteria:~* A pregnant woman with a clinical or genetic diagnosis of TSC as determined by the 2021 Consensus Guidelines (1)~* A pregnant woman with a diagnosis of LAM~* A pregnant woman with a variant of uncertain significance in TSC 1 or TSC 2~* A pregnant woman who is pregnant and the fetus has a 50% chance of TSC as deemed by the PI or Sub-Is~* A pregnant woman whose fetus is found to have concern for TSC secondary to rhabdomyomas, tubers, or congenital subependymal giant cell astrocytoma.~* An infant born to an enrolled individual.~Exclusion Criteria:~* A pregnant woman without TSC who has used preimplantation genetic testing for TSC unless qualifies under inclusion criteria #4.~* Infants diagnosed with TSC whose birth mother was not enrolled.",,,,
+studies.txt,brief_title,,text,Implications for Treatment of the Metabolic Syndrome,,,,
+studies.txt,enrollment,,categorical,,"EARLY_PHASE1        
+PHASE1 
+PHASE1/PHASE2        
+PHASE2 
+PHASE2/PHASE3        
+PHASE3        
+PHASE4 ",No,,
+,,,,,,,,
+,,,,,,,,
+studies.txt,enrollment,The number of participants in a clinical study. ,numeric ,,,,,
+studies.txt,enrollment_type,"The ""estimated"" enrollment is the target number of participants that the researchers need for the study.",categorical,,"ACTUAL 
+ESTIMATED ",NO,,
+studies.txt,has_dmc,,,,,,,Data Monitoring Committee

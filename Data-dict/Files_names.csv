@@ -1,0 +1,59 @@
+Results,,,,,,,
+filename,n_rows,n_unique_nct_id,row_per_study,n_cols,,check,colnames
+baseline_counts.txt,223690,74953,2.98,7,,,id; nct_id; result_group_id; ctgov_group_code; units; scope; count
+baseline_measurements.txt,2711119,74822,36.23,22,,,id; nct_id; result_group_id; ctgov_group_code; classification; category; title; description; units; param_type; param_value; param_value_num; dispersion_type; dispersion_value; dispersion_value_num; dispersion_lower_limit; dispersion_upper_limit; explanation_of_na; number_analyzed; number_analyzed_units; population_description; calculate_percentage
+documents.txt,10611,2720,3.90,6,,v,id; nct_id; document_id; document_type; url; comment
+drop_withdrawals.txt,561989,45113,12.46,10,,v,id; nct_id; result_group_id; ctgov_group_code; period; reason; count; drop_withdraw_comment; reason_comment; count_units
+milestones.txt,830865,74953,11.09,10,,,id; nct_id; result_group_id; ctgov_group_code; title; period; description; count; milestone_description; count_units
+outcome_analyses.txt,306510,25244,12.14,25,,v,id; nct_id; outcome_id; non_inferiority_type; non_inferiority_description; param_type; param_value; dispersion_type; dispersion_value; p_value_modifier; p_value; ci_n_sides; ci_percent; ci_lower_limit; ci_upper_limit; ci_upper_limit_na_comment; p_value_description; method; method_description; estimate_description; groups_description; other_analysis_description; ci_upper_limit_raw; ci_lower_limit_raw; p_value_raw
+outcome_analysis_groups.txt,593422,25244,23.51,5,,v,id; nct_id; outcome_analysis_id; result_group_id; ctgov_group_code
+outcome_counts.txt,1490606,74953,19.89,8,,v,id; nct_id; outcome_id; result_group_id; ctgov_group_code; scope; units; count
+outcome_measurements.txt,4602607,72706,63.30,21,,?,id; nct_id; outcome_id; result_group_id; ctgov_group_code; classification; category; title; description; units; param_type; param_value; param_value_num; dispersion_type; dispersion_value; dispersion_value_num; dispersion_lower_limit; dispersion_upper_limit; explanation_of_na; dispersion_upper_limit_raw; dispersion_lower_limit_raw
+outcomes.txt,618730,74953,8.25,13,,v,id; nct_id; outcome_type; title; description; time_frame; population; anticipated_posting_date; anticipated_posting_month_year; units; units_analyzed; dispersion_type; param_type
+participant_flows.txt,74953,74953,1.00,5,,v,id; nct_id; recruitment_details; pre_assignment_details; units_analyzed
+pending_results.txt,31590,8908,3.55,5,,v,id; nct_id; event; event_date_description; event_date
+provided_documents.txt,73140,48039,1.52,8,,v,id; nct_id; document_type; has_protocol; has_icf; has_sap; document_date; url
+reported_event_totals.txt,560829,74749,7.50,9,safety,,id; nct_id; ctgov_group_code; event_type; classification; subjects_affected; subjects_at_risk; created_at; updated_at
+reported_events.txt,11048706,55333,199.68,17,safety,,id; nct_id; result_group_id; ctgov_group_code; time_frame; event_type; default_vocab; default_assessment; subjects_affected; subjects_at_risk; description; event_count; organ_system; adverse_event_term; frequency_threshold; vocab; assessment
+result_agreements.txt,74953,74953,1.00,7,,v,id; nct_id; pi_employee; agreement; restriction_type; other_details; restrictive_agreement
+result_contacts.txt,74953,74953,1.00,7,,v,id; nct_id; organization; name; phone; email; extension
+result_groups.txt,2057115,74953,27.45,7,,,id; nct_id; ctgov_group_code; result_type; title; description; outcome_id
+retractions.txt,333,304,1.10,5,,v,id; reference_id; pmid; source; nct_id
+,,,,,,,
+Include in LLM,,,,,,,
+Not for LLM,,,,,,,
+Not sure,,,,,,,
+Protocol,,,,,,,
+filename,n_rows,n_unique_nct_id,row_per_study,n_cols,,check,colnames
+brief_summaries.txt,556434,556434,1.00,3,A single text column that provides a brief description of the study.,v,id; nct_id; description
+calculated_values.txt,557381,557381,1.00,19,AACT-provided table,v,id; nct_id; number_of_facilities; number_of_nsae_subjects; number_of_sae_subjects; registered_in_calendar_year; nlm_download_date; actual_duration; were_results_reported; months_to_report_results; has_us_facility; has_single_facility; minimum_age_num; maximum_age_num; minimum_age_unit; maximum_age_unit; number_of_primary_outcomes_to_measure; number_of_secondary_outcomes_to_measure; number_of_other_outcomes_to_measure
+conditions.txt,986340,556400,1.77,4,,,id; nct_id; name; downcase_name
+design_groups.txt,1020065,486280,2.10,5,,,id; nct_id; group_type; title; description
+design_outcomes.txt,3434442,539831,6.36,7,,,id; nct_id; outcome_type; measure; time_frame; population; description
+designs.txt,552670,552670,1.00,14,,v,id; nct_id; allocation; intervention_model; observational_model; primary_purpose; time_perspective; masking; masking_description; intervention_model_description; subject_masked; caregiver_masked; investigator_masked; outcomes_assessor_masked
+detailed_descriptions.txt,556434,556434,1.00,3,A single text column that provides a detailed description of the study protocol.,v,id; nct_id; description
+eligibilities.txt,556434,556434,1.00,14,,v,id; nct_id; sampling_method; gender; minimum_age; maximum_age; healthy_volunteers; population; criteria; gender_description; gender_based; adult; child; older_adult
+interventions.txt,943260,501616,1.88,5,intervention_type,,id; nct_id; intervention_type; name; description
+intervention_other_names.txt,460992,146579,3.15,4,,v,id; nct_id; intervention_id; name
+countries.txt,761712,506685,1.50,4,,v,id; nct_id; name; removed
+browse_conditions.txt,4073326,442275,9.21,5,,v,id; nct_id; mesh_term; downcase_mesh_term; mesh_type
+browse_interventions.txt,2428168,259986,9.34,5,,v,id; nct_id; mesh_term; downcase_mesh_term; mesh_type
+keywords.txt,1462063,350824,4.17,4,,v,id; nct_id; name; downcase_name
+design_group_interventions.txt,1242252,458852,2.71,4,,v,id; nct_id; design_group_id; intervention_id
+central_contacts.txt,210680,143479,1.47,8,,v,id; nct_id; contact_type; name; phone; email; phone_extension; role
+facilities.txt,3336645,500575,6.67,10,,v,id; nct_id; status; name; city; state; zip; country; latitude; longitude
+facility_contacts.txt,402581,120389,3.34,8,,v,id; nct_id; facility_id; contact_type; name; email; phone; phone_extension
+facility_investigators.txt,221809,46038,4.82,5,,v,id; nct_id; facility_id; role; name
+id_information.txt,725424,557324,1.30,7,,v,id; nct_id; id_source; id_value; id_type; id_type_description; id_link
+ipd_information_types.txt,82029,29825,2.75,3,,v,id; nct_id; name
+links.txt,72153,53350,1.35,4,,v,id; nct_id; url; description
+overall_officials.txt,509584,406060,1.25,5,,v,id; nct_id; role; name; affiliation
+responsible_parties.txt,538900,538900,1.00,8,,v,id; nct_id; responsible_party_type; name; title; organization; affiliation; old_name_title
+sponsors.txt,891631,557381,1.60,5,agency_class; lead_or_collaborator,v,id; nct_id; agency_class; lead_or_collaborator; name
+study_references.txt,1040317,206128,5.05,5,Citations to publications related to the study protocol and/or results. Includes PubMed Unique Identifier (PMID) and/or full bibliographic citation.,v,id; nct_id; pmid; reference_type; citation
+,,,,,,,
+studies.txt,557381,557381,1,71,,,nct_id; nlm_download_date_description; study_first_submitted_date; results_first_submitted_date; disposition_first_submitted_date; last_update_submitted_date; study_first_submitted_qc_date; study_first_posted_date; study_first_posted_date_type; results_first_submitted_qc_date; results_first_posted_date; results_first_posted_date_type; disposition_first_submitted_qc_date; disposition_first_posted_date; disposition_first_posted_date_type; last_update_submitted_qc_date; last_update_posted_date; last_update_posted_date_type; start_month_year; start_date_type; start_date; verification_month_year; verification_date; completion_month_year; completion_date_type; completion_date; primary_completion_month_year; primary_completion_date_type; primary_completion_date; target_duration; study_type; acronym; baseline_population; brief_title; official_title; overall_status; last_known_status; phase; enrollment; enrollment_type; source; limitations_and_caveats; number_of_arms; number_of_groups; why_stopped; has_expanded_access; expanded_access_type_individual; expanded_access_type_intermediate; expanded_access_type_treatment; has_dmc; is_fda_regulated_drug; is_fda_regulated_device; is_unapproved_device; is_ppsd; is_us_export; biospec_retention; biospec_description; ipd_time_frame; ipd_access_criteria; ipd_url; plan_to_share_ipd; plan_to_share_ipd_description; created_at; updated_at; source_class; delayed_posting; expanded_access_nctid; expanded_access_status_for_nctid; fdaaa801_violation; baseline_type_units_analyzed; patient_registry
+,,,,,,,
+search_results.txt,0,0,,7,,,id; nct_id; name; created_at; updated_at; grouping; study_search_id
+search_term_results.txt,480688,220006,,5,,,id; nct_id; search_term_id; created_at; updated_at
+search_terms.txt,186,NA,,5,,,id; term; group; created_at; updated_at

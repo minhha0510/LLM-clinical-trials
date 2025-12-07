@@ -1,0 +1,22 @@
+# Environment variables (contains sensitive data like API keys)
+.env
+
+# Large data directories
+CT_data_full/
+
+# Large CSV files (share separately with collaborators)
+terminated_ground_truth.csv
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+
+# IDE settings
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
