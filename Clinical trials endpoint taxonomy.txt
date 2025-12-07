@@ -1,0 +1,35 @@
+Clinical trials endpoint taxonomy
+
+Invalid Reason: Trial flagged as non-clinical, duplicate, or administrative error.
+
+No Context: "Stopped", "Terminated" without further explanation.
+
+Study Design: Protocol flaws, feasibility issues, or design amendments required.
+
+Logistics or Resources: Drug supply shortage, manufacturing failure, or lack of facilities.
+
+Study Staff Moved: Departure of Principal Investigator (PI) or key personnel.
+
+Insufficient Enrolment: Slow accrual, lack of eligible patients.
+
+Insufficient Data: Stopped early without enough data to form a conclusion.
+
+Interim Analysis: Stopped based on pre-planned statistical thresholds (neutral).
+
+Business or Administrative: Sponsor decision, prioritization, funding, or strategic reasons (High Ambiguity).
+
+Another Study: External results (competitor or new standard of care) made this trial obsolete.
+
+Covid 19: Stopped directly due to pandemic disruptions.
+
+Regulatory: FDA/EMA clinical hold or regulatory mandate.
+
+Ethical Reason: IRB/Ethics committee decision unrelated to safety (e.g., consent issues).
+
+Safety and Side Effects: Toxicity, adverse events, or harm to participants.
+
+Negative: Lack of efficacy, futility, or risk-benefit ratio no longer favorable.
+
+Endpoint Met: Stopped early for overwhelming efficacy (Positive).
+
+Success: Trial completed its objectives early (General Positive).

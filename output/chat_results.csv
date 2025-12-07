@@ -1,0 +1,46 @@
+nct_id,input_why_stopped,model,raw_response,primary_reasons,reasoning_traces,confidence,explanation
+INSERT_NCT_ID_HERE,The total number of patients has been reached.,deepseek-chat,"{
+    ""nct_id"": ""INSERT_NCT_ID_HERE"",
+    ""primary_reasons"": [""UNKNOWN_INSUFFICIENT_INFO""],
+    ""reasoning_traces"": {
+        ""UNKNOWN_INSUFFICIENT_INFO"": [""Evidence: 'The total number of patients has been reached.' (why_stopped)"", ""Evidence: No termination-related information in brief_summary or detailed_description fields."", ""Inference: The why_stopped statement describes completion of enrollment rather than termination for a specific reason. The brief_summary and detailed_description only describe the study's objectives and methodology without any mention of early termination, safety issues, enrollment problems, or other termination causes.""]
+    },
+    ""confidence"": ""High"",
+    ""explanation"": ""The why_stopped field indicates enrollment completion rather than termination, and no other fields provide evidence for why the trial was actually terminated.""
+}",['UNKNOWN_INSUFFICIENT_INFO'],"{'UNKNOWN_INSUFFICIENT_INFO': [""Evidence: 'The total number of patients has been reached.' (why_stopped)"", 'Evidence: No termination-related information in brief_summary or detailed_description fields.', ""Inference: The why_stopped statement describes completion of enrollment rather than termination for a specific reason. The brief_summary and detailed_description only describe the study's objectives and methodology without any mention of early termination, safety issues, enrollment problems, or other termination causes.""]}",High,"The why_stopped field indicates enrollment completion rather than termination, and no other fields provide evidence for why the trial was actually terminated."
+INSERT_NCT_ID_HERE,,deepseek-chat,"{
+    ""nct_id"": ""INSERT_NCT_ID_HERE"",
+    ""primary_reasons"": [""UNKNOWN_INSUFFICIENT_INFO""],
+    ""reasoning_traces"": {
+        ""UNKNOWN_INSUFFICIENT_INFO"": [""Evidence: 'nan' (why_stopped)"", ""Evidence: 'The purpose of this study is to evaluate the safety, immunogenicity, and antiviral effects of multiple intravenous doses of ANZ-521 in patients with chronic Hepatitis C virus.' (brief_summary)"", ""Inference: The why_stopped field contains 'nan' (not a number/empty), indicating no termination reason provided. The brief_summary only describes the study purpose, not termination. No detailed_description is provided. Without any explicit termination reason in any field, the reason is unknown due to insufficient information.""]
+    },
+    ""confidence"": ""High"",
+    ""explanation"": ""No termination reason provided in any field; only study purpose described in brief_summary.""
+}",['UNKNOWN_INSUFFICIENT_INFO'],"{'UNKNOWN_INSUFFICIENT_INFO': [""Evidence: 'nan' (why_stopped)"", ""Evidence: 'The purpose of this study is to evaluate the safety, immunogenicity, and antiviral effects of multiple intravenous doses of ANZ-521 in patients with chronic Hepatitis C virus.' (brief_summary)"", ""Inference: The why_stopped field contains 'nan' (not a number/empty), indicating no termination reason provided. The brief_summary only describes the study purpose, not termination. No detailed_description is provided. Without any explicit termination reason in any field, the reason is unknown due to insufficient information.""]}",High,No termination reason provided in any field; only study purpose described in brief_summary.
+INSERT_NCT_ID_HERE,,deepseek-chat,"{
+    ""nct_id"": ""INSERT_NCT_ID_HERE"",
+    ""primary_reasons"": [""UNKNOWN_INSUFFICIENT_INFO""],
+    ""reasoning_traces"": {
+        ""UNKNOWN_INSUFFICIENT_INFO"": [""Evidence: 'nan' (why_stopped)"", ""Evidence: No termination-related information in brief_summary or detailed_description fields."", ""Inference: The why_stopped field contains 'nan' (not a number/not available), and the provided summary/description only describe study methods without any mention of termination reasons, leaving insufficient information to categorize.""]
+    },
+    ""confidence"": ""High"",
+    ""explanation"": ""No termination reason provided in any field; only study methodology described.""
+}",['UNKNOWN_INSUFFICIENT_INFO'],"{'UNKNOWN_INSUFFICIENT_INFO': [""Evidence: 'nan' (why_stopped)"", 'Evidence: No termination-related information in brief_summary or detailed_description fields.', ""Inference: The why_stopped field contains 'nan' (not a number/not available), and the provided summary/description only describe study methods without any mention of termination reasons, leaving insufficient information to categorize.""]}",High,No termination reason provided in any field; only study methodology described.
+INSERT_NCT_ID_HERE,Study may continue,deepseek-chat,"{
+    ""nct_id"": ""INSERT_NCT_ID_HERE"",
+    ""primary_reasons"": [""UNKNOWN_INSUFFICIENT_INFO""],
+    ""reasoning_traces"": {
+        ""UNKNOWN_INSUFFICIENT_INFO"": [""Evidence: No 'why_stopped' field provided in the input data."", ""Evidence: No termination-related information in brief_summary or detailed_description fields."", ""Inference: The input only contains a study description with no termination information. The phrase 'Study may continue' appears to be part of the prompt structure, not trial data. Without any termination evidence, the reason cannot be determined.""]
+    },
+    ""confidence"": ""High"",
+    ""explanation"": ""No termination information provided in any field of the input data.""
+}",['UNKNOWN_INSUFFICIENT_INFO'],"{'UNKNOWN_INSUFFICIENT_INFO': [""Evidence: No 'why_stopped' field provided in the input data."", 'Evidence: No termination-related information in brief_summary or detailed_description fields.', ""Inference: The input only contains a study description with no termination information. The phrase 'Study may continue' appears to be part of the prompt structure, not trial data. Without any termination evidence, the reason cannot be determined.""]}",High,No termination information provided in any field of the input data.
+INSERT_NCT_ID_HERE,,deepseek-chat,"{
+    ""nct_id"": ""INSERT_NCT_ID_HERE"",
+    ""primary_reasons"": [""UNKNOWN_INSUFFICIENT_INFO""],
+    ""reasoning_traces"": {
+        ""UNKNOWN_INSUFFICIENT_INFO"": [""Evidence: 'nan' (why_stopped)"", ""Evidence: No termination-related information in brief_summary or detailed_description fields."", ""Inference: The why_stopped field contains 'nan' (not a number/empty), and the summary/description only describe the study design without any mention of termination, reasons for stopping, or completion status.""]
+    },
+    ""confidence"": ""High"",
+    ""explanation"": ""No termination reason provided in any field; only study design information is available.""
+}",['UNKNOWN_INSUFFICIENT_INFO'],"{'UNKNOWN_INSUFFICIENT_INFO': [""Evidence: 'nan' (why_stopped)"", 'Evidence: No termination-related information in brief_summary or detailed_description fields.', ""Inference: The why_stopped field contains 'nan' (not a number/empty), and the summary/description only describe the study design without any mention of termination, reasons for stopping, or completion status.""]}",High,No termination reason provided in any field; only study design information is available.

@@ -24,3 +24,15 @@ Responsibility: File/Module ownership and public contracts.
     -   Filters `studies.txt` (Interventional/Terminated/Treatment).
     -   Applies Regex Taxonomy (Enrollment, Admin, Safety, etc.).
     -   Merges `brief_summary` (all) and `detailed_description` (target sub-population).
+
+### `add_medical_fields.py`
+-   **Owns**: Enrichment of ground truth datasets with medical field classifications.
+-   **Logic**:
+    -   Uses MeSH terms from `browse_conditions.txt` as primary source.
+    -   Falls back to `conditions` column if MeSH unavailable.
+    -   Further fallback to `brief_title` + `brief_summary` for classification.
+    -   Maps to 15+ medical specialties (Oncology, Cardiology, Neurology, etc.).
+    -   Extracts medical subfields for more granular categorization.
+-   **Outputs**: 
+    -   `pilot_ground_truth_with_fields.csv`
+    -   `terminated_ground_truth_enriched.csv` (when run with --full flag)

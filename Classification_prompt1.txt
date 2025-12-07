@@ -1,0 +1,79 @@
+Prompt_1
+
+You are a precise and methodical clinical research analyst. Your task is to extract and categorize the primary reasons for clinical trial termination from provided data. You must always output a valid JSON object and include clear reasoning based on explicit text evidence.
+
+**TASK**
+Analyze the clinical trial record below. Perform the following steps:
+1.  **Extract Evidence:** Identify all text snippets relevant to *why the trial was terminated*. Focus on the `why_stopped` field, but also critically examine `brief_summary` and `detailed_description` for additional context or contradictory information.
+2.  **Categorize:** Map the extracted evidence to one or more categories from the fixed taxonomy below. A trial can have multiple primary reasons.
+3.  **Reason:** For each assigned category, provide a concise, bullet-point reasoning trace that directly quotes or references the text evidence that led to that conclusion.
+4.  **Confidence:** Assign an overall confidence score (Low, Medium, High) based on the clarity and directness of the evidence.
+
+**THE 17-CATEGORY ONTOLOGY (Use exact names):**
+
+{Taxonomy here}
+
+HIERARCHY RULES (Priority Order):
+
+Scientific Trumps Operational: If a text says "Sponsor decision due to negative interim results," classify as Negative (not Business).
+
+Safety Trumps Enrollment: If a text says "Recruitment challenges and observed toxicity," classify as Safety and Side Effects.
+
+OUTPUT FORMAT: You must output a JSON object containing a step-by-step reasoning trace and the final classification."
+
+**OUTPUT FORMAT**
+You MUST output a valid JSON object with this exact structure:
+{
+  "nct_id": "provided_id",
+  "primary_reasons": ["CATEGORY_1", "CATEGORY_2"],
+  "reasoning_traces": {
+    "CATEGORY_1": ["Evidence: '[quote]'", "Inference: ..."],
+    "CATEGORY_2": ["Evidence: '[quote]'", "Inference: ..."]
+  },
+  "confidence": "High/Medium/Low",
+  "explanation": "One-sentence summary of the overall determination."
+}
+
+/* --- Example 2: Safety (with inference) --- */
+{
+  "nct_id": "NCT-TEST-002",
+  "why_stopped": "Terminated by DSMB recommendation.",
+  "brief_summary": "The trial was halted following an interim analysis.",
+  "detailed_description": "An unplanned interim review by the Data and Safety Monitoring Board (DSMB) revealed a significant imbalance in serious adverse events (SAEs) in the treatment arm, including 3 cases of grade 3+ hepatotoxicity."
+}
+// Analysis for NCT-TEST-002:
+{
+  "nct_id": "NCT-TEST-002",
+  "primary_reasons": ["SAFETY"],
+  "reasoning_traces": {
+    "SAFETY": ["Evidence: 'Terminated by DSMB recommendation.' (why_stopped)", "Evidence: 'significant imbalance in serious adverse events (SAEs)... including 3 cases of grade 3+ hepatotoxicity' (detailed_description)", "Inference: DSMB halts are often for safety/futility; the explicit mention of specific, severe adverse events confirms SAFETY as the primary reason."]
+  },
+  "confidence": "High",
+  "explanation": "DSMB halt with clear evidence of specific, severe adverse events driving the decision."
+}
+
+/* --- Example 3: Unknown (Vague) --- */
+{
+  "nct_id": "NCT-TEST-003",
+  "why_stopped": "Terminated.",
+  "brief_summary": "This study was completed early.",
+  "detailed_description": "The study is no longer ongoing."
+}
+// Analysis for NCT-TEST-003:
+{
+  "nct_id": "NCT-TEST-003",
+  "primary_reasons": ["UNKNOWN_INSUFFICIENT_INFO"],
+  "reasoning_traces": {
+    "UNKNOWN_INSUFFICIENT_INFO": ["Evidence: 'Terminated.' (why_stopped)", "Evidence: No explanatory context in summary or description fields.", "Inference: The word 'terminated' is a status, not a reason. No supporting details are provided to infer any specific category."]
+  },
+  "confidence": "High",
+  "explanation": "Vague termination statement with no supporting evidence in any field."
+}
+
+**NOW, ANALYZE THE FOLLOWING TRIAL RECORD:**
+{
+  "nct_id": "INSERT_NCT_ID_HERE",
+  "why_stopped": "INSERT_WHY_STOPPED_TEXT_HERE",
+  "brief_summary": "INSERT_BRIEF_SUMMARY_TEXT_HERE",
+  "detailed_description": "INSERT_DETAILED_DESCRIPTION_TEXT_HERE"
+}

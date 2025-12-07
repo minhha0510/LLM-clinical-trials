@@ -6,6 +6,7 @@ CT_data_full/
 
 # Large CSV files (share separately with collaborators)
 terminated_ground_truth.csv
+terminated_ground_truth_enriched.csv
 
 # Python cache
 __pycache__/

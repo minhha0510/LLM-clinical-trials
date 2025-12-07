@@ -1,0 +1,472 @@
+nct_id,input_why_stopped,model,raw_response,primary_reasons,reasoning_traces,confidence,explanation
+NCT00642135,The total number of patients has been reached.,deepseek-chat,"{
+    ""nct_id"": ""NCT00642135"",
+    ""primary_reasons"": [""Success""],
+    ""reasoning_traces"": {
+        ""Success"": [""Evidence: 'The total number of patients has been reached.' (why_stopped)"", ""Evidence: The brief_summary and detailed_description describe a study aiming to evaluate mydriasis efficacy and tolerance in specific patient populations."", ""Inference: The trial stopped because it achieved its enrollment target, which typically indicates completion of planned recruitment rather than early termination for negative reasons. No mention of safety issues, futility, or other termination causes.""]
+    },
+    ""confidence"": ""High"",
+    ""explanation"": ""Trial stopped because planned enrollment target was met, indicating successful completion of recruitment phase.""
+}",['Success'],"{'Success': [""Evidence: 'The total number of patients has been reached.' (why_stopped)"", 'Evidence: The brief_summary and detailed_description describe a study aiming to evaluate mydriasis efficacy and tolerance in specific patient populations.', 'Inference: The trial stopped because it achieved its enrollment target, which typically indicates completion of planned recruitment rather than early termination for negative reasons. No mention of safety issues, futility, or other termination causes.']}",High,"Trial stopped because planned enrollment target was met, indicating successful completion of recruitment phase."
+NCT00642135,The total number of patients has been reached.,deepseek-chat,"{
+    ""nct_id"": ""NCT00642135"",
+    ""primary_reasons"": [""Endpoint Met""],
+    ""reasoning_traces"": {
+        ""Endpoint Met"": [""Evidence: 'The total number of patients has been reached.' (why_stopped)"", ""Evidence: 'The aim of the study is to obtain a satisfactory degree of mydriasis with a minimal dose of two mydriatic treatments, with an optimal duration and a good tolerance of the drugs.' (brief_summary)"", ""Inference: The trial stopped because it reached its planned enrollment target, which is a common reason for trial completion rather than termination. This suggests the trial met its recruitment endpoint and was not terminated early for negative reasons.""]
+    },
+    ""confidence"": ""High"",
+    ""explanation"": ""Trial stopped because planned enrollment target was reached, indicating completion of recruitment objectives.""
+}",['Endpoint Met'],"{'Endpoint Met': [""Evidence: 'The total number of patients has been reached.' (why_stopped)"", ""Evidence: 'The aim of the study is to obtain a satisfactory degree of mydriasis with a minimal dose of two mydriatic treatments, with an optimal duration and a good tolerance of the drugs.' (brief_summary)"", 'Inference: The trial stopped because it reached its planned enrollment target, which is a common reason for trial completion rather than termination. This suggests the trial met its recruitment endpoint and was not terminated early for negative reasons.']}",High,"Trial stopped because planned enrollment target was reached, indicating completion of recruitment objectives."
+NCT00642135,The total number of patients has been reached.,deepseek-chat,"{
+    ""nct_id"": ""NCT00642135"",
+    ""primary_reasons"": [""Endpoint Met""],
+    ""reasoning_traces"": {
+        ""Endpoint Met"": [""Evidence: 'The total number of patients has been reached.' (why_stopped)"", ""Evidence: 'The aim of the study is to obtain a satisfactory degree of mydriasis with a minimal dose of two mydriatic treatments, with an optimal duration and a good tolerance of the drugs.' (brief_summary)"", ""Inference: The trial stopped because the target enrollment was achieved, which is a planned endpoint for data collection. There is no mention of early termination for efficacy, safety, or other reasons; it appears to have reached its planned recruitment goal.""]
+    },
+    ""confidence"": ""High"",
+    ""explanation"": ""Trial terminated because the planned patient enrollment target was reached, indicating completion of the recruitment phase as intended.""
+}",['Endpoint Met'],"{'Endpoint Met': [""Evidence: 'The total number of patients has been reached.' (why_stopped)"", ""Evidence: 'The aim of the study is to obtain a satisfactory degree of mydriasis with a minimal dose of two mydriatic treatments, with an optimal duration and a good tolerance of the drugs.' (brief_summary)"", 'Inference: The trial stopped because the target enrollment was achieved, which is a planned endpoint for data collection. There is no mention of early termination for efficacy, safety, or other reasons; it appears to have reached its planned recruitment goal.']}",High,"Trial terminated because the planned patient enrollment target was reached, indicating completion of the recruitment phase as intended."
+NCT00800007,,deepseek-chat,"{
+    ""nct_id"": ""NCT00800007"",
+    ""primary_reasons"": [""No Context""],
+    ""reasoning_traces"": {
+        ""No Context"": [""Evidence: 'why_stopped: NaN' (explicitly null/empty)"", ""Evidence: No mention of termination, completion, or status in 'brief_summary' or 'detailed_description'"", ""Inference: The record provides no explicit information about why or if the trial was terminated; the absence of a 'why_stopped' value and no termination context in descriptions necessitates classification as 'No Context'.""]
+    },
+    ""confidence"": ""High"",
+    ""explanation"": ""The trial record lacks any explicit information about termination, with a null 'why_stopped' field and no termination-related context in descriptions.""
+}",['No Context'],"{'No Context': [""Evidence: 'why_stopped: NaN' (explicitly null/empty)"", ""Evidence: No mention of termination, completion, or status in 'brief_summary' or 'detailed_description'"", ""Inference: The record provides no explicit information about why or if the trial was terminated; the absence of a 'why_stopped' value and no termination context in descriptions necessitates classification as 'No Context'.""]}",High,"The trial record lacks any explicit information about termination, with a null 'why_stopped' field and no termination-related context in descriptions."
+NCT00217074,,deepseek-chat,"{
+    ""nct_id"": ""NCT00217074"",
+    ""primary_reasons"": [""No Context""],
+    ""reasoning_traces"": {
+        ""No Context"": [""Evidence: 'why_stopped: NaN' indicates no termination reason provided"", ""Evidence: 'brief_summary' describes study methods but gives no indication of termination"", ""Evidence: 'detailed_description: NaN' provides no additional context"", ""Inference: The trial record contains no explicit explanation for why the trial was terminated/stopped, only study methodology description.""]
+    },
+    ""confidence"": ""High"",
+    ""explanation"": ""No termination reason provided in any field, only study methodology described.""
+}",['No Context'],"{'No Context': [""Evidence: 'why_stopped: NaN' indicates no termination reason provided"", ""Evidence: 'brief_summary' describes study methods but gives no indication of termination"", ""Evidence: 'detailed_description: NaN' provides no additional context"", 'Inference: The trial record contains no explicit explanation for why the trial was terminated/stopped, only study methodology description.']}",High,"No termination reason provided in any field, only study methodology described."
+NCT03368859,Study may continue,deepseek-chat,"{
+    ""nct_id"": ""NCT03368859"",
+    ""primary_reasons"": [""No Context""],
+    ""reasoning_traces"": {
+        ""No Context"": [""Evidence: 'Study may continue' (why_stopped)"", ""Inference: The phrase 'Study may continue' is ambiguous and provides no clear explanation for termination; it suggests the trial might not actually be terminated, but if it is, there's no stated reason.""]
+    },
+    ""confidence"": ""Low"",
+    ""explanation"": ""The why_stopped field contains ambiguous text ('Study may continue') that does not explain termination, and no other fields provide contradictory or clarifying evidence.""
+}",['No Context'],"{'No Context': [""Evidence: 'Study may continue' (why_stopped)"", ""Inference: The phrase 'Study may continue' is ambiguous and provides no clear explanation for termination; it suggests the trial might not actually be terminated, but if it is, there's no stated reason.""]}",Low,"The why_stopped field contains ambiguous text ('Study may continue') that does not explain termination, and no other fields provide contradictory or clarifying evidence."
+NCT00067041,,deepseek-chat,"{
+    ""nct_id"": ""NCT00067041"",
+    ""primary_reasons"": [""No Context""],
+    ""reasoning_traces"": {
+        ""No Context"": [""Evidence: 'why_stopped: NaN' (why_stopped field is explicitly empty)"", ""Evidence: 'brief_summary: Approximately 30 patients will be enrolled in this 12-week study...' (brief_summary describes study design but provides no termination information)"", ""Evidence: 'detailed_description: NaN' (detailed_description field is empty)"", ""Inference: No text evidence exists in any provided field explaining why the trial was terminated. The 'why_stopped' field is empty, and other fields contain only study description without termination context.""]
+    },
+    ""confidence"": ""High"",
+    ""explanation"": ""No termination reason provided in any field; the 'why_stopped' field is explicitly empty (NaN) and other fields contain only study description.""
+}",['No Context'],"{'No Context': [""Evidence: 'why_stopped: NaN' (why_stopped field is explicitly empty)"", ""Evidence: 'brief_summary: Approximately 30 patients will be enrolled in this 12-week study...' (brief_summary describes study design but provides no termination information)"", ""Evidence: 'detailed_description: NaN' (detailed_description field is empty)"", ""Inference: No text evidence exists in any provided field explaining why the trial was terminated. The 'why_stopped' field is empty, and other fields contain only study description without termination context.""]}",High,No termination reason provided in any field; the 'why_stopped' field is explicitly empty (NaN) and other fields contain only study description.
+NCT02661022,,deepseek-chat,"{
+    ""nct_id"": ""NCT02661022"",
+    ""primary_reasons"": [""No Context""],
+    ""reasoning_traces"": {
+        ""No Context"": [""Evidence: 'why_stopped: NaN' indicates no termination reason provided"", ""Evidence: 'brief_summary' contains only study description without termination information"", ""Evidence: 'detailed_description' contains only study design details without termination information"", ""Inference: No explicit text evidence explains why the trial was terminated; only study design and objectives are described.""]
+    },
+    ""confidence"": ""High"",
+    ""explanation"": ""The trial record contains no information about termination, only study design details, so 'No Context' is the appropriate classification.""
+}",['No Context'],"{'No Context': [""Evidence: 'why_stopped: NaN' indicates no termination reason provided"", ""Evidence: 'brief_summary' contains only study description without termination information"", ""Evidence: 'detailed_description' contains only study design details without termination information"", 'Inference: No explicit text evidence explains why the trial was terminated; only study design and objectives are described.']}",High,"The trial record contains no information about termination, only study design details, so 'No Context' is the appropriate classification."
+NCT00493857,Cohort 2 not going forward. Manadate changes in Company,deepseek-chat,"{
+    ""nct_id"": ""NCT00493857"",
+    ""primary_reasons"": [""Business or Administrative""],
+    ""reasoning_traces"": {
+        ""Business or Administrative"": [""Evidence: \""Cohort 2 not going forward. Manadate changes in Company\"" (why_stopped)"", ""Inference: The explicit mention of 'mandate changes in Company' indicates a sponsor-level strategic or administrative decision, not related to scientific outcomes, safety, or enrollment issues.""]
+    },
+    ""confidence"": ""Medium"",
+    ""explanation"": ""Termination driven by company mandate changes, classified as a business/administrative decision with no contradictory evidence in other fields.""
+}",['Business or Administrative'],"{'Business or Administrative': ['Evidence: ""Cohort 2 not going forward. Manadate changes in Company"" (why_stopped)', ""Inference: The explicit mention of 'mandate changes in Company' indicates a sponsor-level strategic or administrative decision, not related to scientific outcomes, safety, or enrollment issues.""]}",Medium,"Termination driven by company mandate changes, classified as a business/administrative decision with no contradictory evidence in other fields."
+NCT01313663,,deepseek-chat,"{
+    ""nct_id"": ""NCT01313663"",
+    ""primary_reasons"": [""No Context""],
+    ""reasoning_traces"": {
+        ""No Context"": [""Evidence: 'why_stopped: NaN' (why_stopped field)"", ""Evidence: 'brief_summary' contains only study design and objectives without termination explanation"", ""Evidence: 'detailed_description: NaN' (detailed_description field)"", ""Inference: No explicit termination reason provided in any field; only 'NaN' in why_stopped and detailed_description fields, with brief_summary describing trial design only.""]
+    },
+    ""confidence"": ""High"",
+    ""explanation"": ""No termination reason provided in any field; only trial design information available.""
+}",['No Context'],"{'No Context': [""Evidence: 'why_stopped: NaN' (why_stopped field)"", ""Evidence: 'brief_summary' contains only study design and objectives without termination explanation"", ""Evidence: 'detailed_description: NaN' (detailed_description field)"", ""Inference: No explicit termination reason provided in any field; only 'NaN' in why_stopped and detailed_description fields, with brief_summary describing trial design only.""]}",High,No termination reason provided in any field; only trial design information available.
+NCT03904108,insufficient patient population to complete trial as planned,deepseek-chat,"{
+    ""nct_id"": ""NCT03904108"",
+    ""primary_reasons"": [""Insufficient Enrolment""],
+    ""reasoning_traces"": {
+        ""Insufficient Enrolment"": [""Evidence: \""insufficient patient population to complete trial as planned\"" (why_stopped)"", ""Evidence: \""Up to 25 evaluable participants will be enrolled over a period of 2 years. Seven patients will be recruited at the first stage\"" (brief_summary)"", ""Inference: The explicit termination reason directly states insufficient patient population, which aligns with the trial's enrollment target of 25 patients over 2 years, indicating recruitment challenges prevented completion.""]
+    },
+    ""confidence"": ""High"",
+    ""explanation"": ""Clear, direct statement in why_stopped field indicates termination due to insufficient patient enrollment to complete the trial as planned.""
+}",['Insufficient Enrolment'],"{'Insufficient Enrolment': ['Evidence: ""insufficient patient population to complete trial as planned"" (why_stopped)', 'Evidence: ""Up to 25 evaluable participants will be enrolled over a period of 2 years. Seven patients will be recruited at the first stage"" (brief_summary)', ""Inference: The explicit termination reason directly states insufficient patient population, which aligns with the trial's enrollment target of 25 patients over 2 years, indicating recruitment challenges prevented completion.""]}",High,"Clear, direct statement in why_stopped field indicates termination due to insufficient patient enrollment to complete the trial as planned."
+NCT00144105,,deepseek-chat,"{
+    ""nct_id"": ""NCT00144105"",
+    ""primary_reasons"": [""No Context""],
+    ""reasoning_traces"": {
+        ""No Context"": [""Evidence: 'why_stopped: NaN' indicates no termination reason provided"", ""Evidence: 'brief_summary' describes the study purpose but gives no termination information"", ""Evidence: 'detailed_description: NaN' provides no additional context about termination"", ""Inference: The trial record contains no explicit explanation for why it was terminated, only stating it was terminated without further details.""]
+    },
+    ""confidence"": ""High"",
+    ""explanation"": ""The trial record provides no explanation for termination, with empty why_stopped field and no relevant information in other fields.""
+}",['No Context'],"{'No Context': [""Evidence: 'why_stopped: NaN' indicates no termination reason provided"", ""Evidence: 'brief_summary' describes the study purpose but gives no termination information"", ""Evidence: 'detailed_description: NaN' provides no additional context about termination"", 'Inference: The trial record contains no explicit explanation for why it was terminated, only stating it was terminated without further details.']}",High,"The trial record provides no explanation for termination, with empty why_stopped field and no relevant information in other fields."
+NCT01189240,Company decided to stop development of drug - 7/31/12,deepseek-chat,"{
+    ""nct_id"": ""NCT01189240"",
+    ""primary_reasons"": [""Business or Administrative""],
+    ""reasoning_traces"": {
+        ""Business or Administrative"": [""Evidence: \""Company decided to stop development of drug - 7/31/12\"" (why_stopped)"", ""Inference: The explicit statement indicates a sponsor/company decision to halt drug development, which falls under business/administrative reasons rather than scientific outcomes like safety or efficacy.""]
+    },
+    ""confidence"": ""High"",
+    ""explanation"": ""Clear sponsor decision to stop drug development without mention of safety, efficacy, or other scientific reasons.""
+}",['Business or Administrative'],"{'Business or Administrative': ['Evidence: ""Company decided to stop development of drug - 7/31/12"" (why_stopped)', 'Inference: The explicit statement indicates a sponsor/company decision to halt drug development, which falls under business/administrative reasons rather than scientific outcomes like safety or efficacy.']}",High,"Clear sponsor decision to stop drug development without mention of safety, efficacy, or other scientific reasons."
+NCT02829827,"After reviewing the feasibility and projected completion date of the study, UCB has made the decision to stop the study",deepseek-chat,"{
+    ""nct_id"": ""NCT02829827"",
+    ""primary_reasons"": [""Business or Administrative""],
+    ""reasoning_traces"": {
+        ""Business or Administrative"": [""Evidence: \""After reviewing the feasibility and projected completion date of the study, UCB has made the decision to stop the study\"" (why_stopped)"", ""Inference: The sponsor (UCB) made a strategic decision based on feasibility review and timeline projections, which falls under sponsor decisions/strategic reasons rather than scientific or safety concerns.""]
+    },
+    ""confidence"": ""Medium"",
+    ""explanation"": ""Sponsor decision based on feasibility and timeline review without explicit scientific or safety rationale.""
+}",['Business or Administrative'],"{'Business or Administrative': ['Evidence: ""After reviewing the feasibility and projected completion date of the study, UCB has made the decision to stop the study"" (why_stopped)', 'Inference: The sponsor (UCB) made a strategic decision based on feasibility review and timeline projections, which falls under sponsor decisions/strategic reasons rather than scientific or safety concerns.']}",Medium,Sponsor decision based on feasibility and timeline review without explicit scientific or safety rationale.
+NCT00944333,STOP due to recent data in literature questioning the need to continue DAP beyond six months in patients with stable coronary artery stenting with DES.,deepseek-chat,"{
+    ""nct_id"": ""NCT00944333"",
+    ""primary_reasons"": [""Another Study""],
+    ""reasoning_traces"": {
+        ""Another Study"": [""Evidence: \""STOP due to recent data in literature questioning the need to continue DAP beyond six months in patients with stable coronary artery stenting with DES.\"" (why_stopped)"", ""Inference: The explicit mention of 'recent data in literature' indicates external research findings made continuing this trial unnecessary or obsolete, directly matching the 'Another Study' category.""]
+    },
+    ""confidence"": ""High"",
+    ""explanation"": ""Trial terminated because external literature data questioned the clinical need for the longer treatment duration being studied.""
+}",['Another Study'],"{'Another Study': ['Evidence: ""STOP due to recent data in literature questioning the need to continue DAP beyond six months in patients with stable coronary artery stenting with DES."" (why_stopped)', ""Inference: The explicit mention of 'recent data in literature' indicates external research findings made continuing this trial unnecessary or obsolete, directly matching the 'Another Study' category.""]}",High,Trial terminated because external literature data questioned the clinical need for the longer treatment duration being studied.
+NCT04750759,sub-therapeutic plasma levels of active substance,deepseek-chat,"{
+    ""nct_id"": ""NCT04750759"",
+    ""primary_reasons"": [""Logistics or Resources""],
+    ""reasoning_traces"": {
+        ""Logistics or Resources"": [""Evidence: 'sub-therapeutic plasma levels of active substance' (why_stopped)"", ""Inference: 'Sub-therapeutic plasma levels' indicates the drug formulation, manufacturing, or delivery method failed to achieve adequate drug concentrations in patients, which is a drug supply/performance issue rather than a scientific finding about efficacy or safety.""]
+    },
+    ""confidence"": ""High"",
+    ""explanation"": ""Trial terminated due to failure to achieve adequate drug plasma levels, indicating a drug formulation or delivery problem rather than efficacy or safety findings.""
+}",['Logistics or Resources'],"{'Logistics or Resources': [""Evidence: 'sub-therapeutic plasma levels of active substance' (why_stopped)"", ""Inference: 'Sub-therapeutic plasma levels' indicates the drug formulation, manufacturing, or delivery method failed to achieve adequate drug concentrations in patients, which is a drug supply/performance issue rather than a scientific finding about efficacy or safety.""]}",High,"Trial terminated due to failure to achieve adequate drug plasma levels, indicating a drug formulation or delivery problem rather than efficacy or safety findings."
+NCT00215852,,deepseek-chat,"{
+    ""nct_id"": ""NCT00215852"",
+    ""primary_reasons"": [""No Context""],
+    ""reasoning_traces"": {
+        ""No Context"": [""Evidence: 'why_stopped: NaN' indicates no termination reason provided in the designated field."", ""Evidence: The 'brief_summary' and 'detailed_description' fields contain only study design and methodology details with no mention of termination, completion, or reasons for stopping."", ""Inference: Without any explicit text about termination or reasons for stopping in any field, the trial record provides no context for why it might have been terminated.""]
+    },
+    ""confidence"": ""High"",
+    ""explanation"": ""The trial record contains no information about termination in any field, meeting the exact definition of 'No Context' category.""
+}",['No Context'],"{'No Context': [""Evidence: 'why_stopped: NaN' indicates no termination reason provided in the designated field."", ""Evidence: The 'brief_summary' and 'detailed_description' fields contain only study design and methodology details with no mention of termination, completion, or reasons for stopping."", 'Inference: Without any explicit text about termination or reasons for stopping in any field, the trial record provides no context for why it might have been terminated.']}",High,"The trial record contains no information about termination in any field, meeting the exact definition of 'No Context' category."
+NCT01668680,No satisfactory acrual,deepseek-chat,"{
+    ""nct_id"": ""NCT01668680"",
+    ""primary_reasons"": [""Insufficient Enrolment""],
+    ""reasoning_traces"": {
+        ""Insufficient Enrolment"": [""Evidence: 'No satisfactory acrual' (why_stopped)"", ""Inference: The explicit statement 'No satisfactory acrual' directly indicates insufficient patient enrollment as the reason for termination, with 'acrual' being a clear misspelling of 'accrual'.""]
+    },
+    ""confidence"": ""High"",
+    ""explanation"": ""The trial was terminated due to insufficient patient enrollment, as explicitly stated in the why_stopped field without contradictory evidence in other sections.""
+}",['Insufficient Enrolment'],"{'Insufficient Enrolment': [""Evidence: 'No satisfactory acrual' (why_stopped)"", ""Inference: The explicit statement 'No satisfactory acrual' directly indicates insufficient patient enrollment as the reason for termination, with 'acrual' being a clear misspelling of 'accrual'.""]}",High,"The trial was terminated due to insufficient patient enrollment, as explicitly stated in the why_stopped field without contradictory evidence in other sections."
+NCT00790478,,deepseek-chat,"{
+    ""nct_id"": ""NCT00790478"",
+    ""primary_reasons"": [""No Context""],
+    ""reasoning_traces"": {
+        ""No Context"": [""Evidence: 'why_stopped: NaN' (explicitly null/empty)"", ""Inference: The 'why_stopped' field contains no information about termination reasons. The 'brief_summary' and 'detailed_description' describe the study's rationale, design, and aims but contain no text indicating termination, early stopping, or reasons for discontinuation. Without any explicit statement about trial status or reasons for stopping, only the 'No Context' category applies.""]
+    },
+    ""confidence"": ""High"",
+    ""explanation"": ""The trial record provides no information about termination; all fields describe study plans without any indication of actual stopping or reasons.""
+}",['No Context'],"{'No Context': [""Evidence: 'why_stopped: NaN' (explicitly null/empty)"", ""Inference: The 'why_stopped' field contains no information about termination reasons. The 'brief_summary' and 'detailed_description' describe the study's rationale, design, and aims but contain no text indicating termination, early stopping, or reasons for discontinuation. Without any explicit statement about trial status or reasons for stopping, only the 'No Context' category applies.""]}",High,The trial record provides no information about termination; all fields describe study plans without any indication of actual stopping or reasons.
+NCT00547274,,deepseek-chat,"{
+    ""nct_id"": ""NCT00547274"",
+    ""primary_reasons"": [""No Context""],
+    ""reasoning_traces"": {
+        ""No Context"": [""Evidence: 'why_stopped: NaN' indicates no termination reason provided"", ""Evidence: 'brief_summary' contains only study purpose and protocol status information, with no mention of termination"", ""Inference: The trial record lacks any explicit statement about why the trial was stopped, meeting the definition of 'Stopped, Terminated without further explanation' in the taxonomy""]
+    },
+    ""confidence"": ""High"",
+    ""explanation"": ""No termination reason provided in any field, requiring classification as No Context.""
+}",['No Context'],"{'No Context': [""Evidence: 'why_stopped: NaN' indicates no termination reason provided"", ""Evidence: 'brief_summary' contains only study purpose and protocol status information, with no mention of termination"", ""Inference: The trial record lacks any explicit statement about why the trial was stopped, meeting the definition of 'Stopped, Terminated without further explanation' in the taxonomy""]}",High,"No termination reason provided in any field, requiring classification as No Context."
+NCT00254891,See Termination Reason in Detailed Description,deepseek-chat,"{
+    ""nct_id"": ""NCT00254891"",
+    ""primary_reasons"": [""Negative"", ""Safety and Side Effects""],
+    ""reasoning_traces"": {
+        ""Negative"": [""Evidence: \""citing lack of efficacy concerns as the primary reason\"" (detailed_description)"", ""Inference: The DSMC explicitly identified lack of efficacy as the primary reason for recommending trial closure, which falls under the Negative category (lack of efficacy/futility).""],
+        ""Safety and Side Effects"": [""Evidence: \""with a safety issue (sepsis) also contributing to the decision\"" (detailed_description)"", ""Inference: The DSMC cited a specific safety issue (sepsis) as a contributing factor to the termination decision, which directly maps to the Safety and Side Effects category.""]
+    },
+    ""confidence"": ""High"",
+    ""explanation"": ""DSMC recommendation cited both lack of efficacy (primary reason) and a safety issue (sepsis) as reasons for trial termination.""
+}","['Negative', 'Safety and Side Effects']","{'Negative': ['Evidence: ""citing lack of efficacy concerns as the primary reason"" (detailed_description)', 'Inference: The DSMC explicitly identified lack of efficacy as the primary reason for recommending trial closure, which falls under the Negative category (lack of efficacy/futility).'], 'Safety and Side Effects': ['Evidence: ""with a safety issue (sepsis) also contributing to the decision"" (detailed_description)', 'Inference: The DSMC cited a specific safety issue (sepsis) as a contributing factor to the termination decision, which directly maps to the Safety and Side Effects category.']}",High,DSMC recommendation cited both lack of efficacy (primary reason) and a safety issue (sepsis) as reasons for trial termination.
+NCT00305383,Dose levels were determined to be subtherapeutic,deepseek-chat,"{
+    ""nct_id"": ""NCT00305383"",
+    ""primary_reasons"": [""Negative""],
+    ""reasoning_traces"": {
+        ""Negative"": [""Evidence: \""Dose levels were determined to be subtherapeutic\"" (why_stopped)"", ""Inference: The explicit statement that dose levels were 'subtherapeutic' indicates lack of efficacy or insufficient therapeutic effect, which falls under the 'Negative' category (lack of efficacy, futility, or risk-benefit ratio no longer favorable).""]
+    },
+    ""confidence"": ""High"",
+    ""explanation"": ""Clear evidence of subtherapeutic dosing leading to trial termination due to lack of efficacy.""
+}",['Negative'],"{'Negative': ['Evidence: ""Dose levels were determined to be subtherapeutic"" (why_stopped)', ""Inference: The explicit statement that dose levels were 'subtherapeutic' indicates lack of efficacy or insufficient therapeutic effect, which falls under the 'Negative' category (lack of efficacy, futility, or risk-benefit ratio no longer favorable).""]}",High,Clear evidence of subtherapeutic dosing leading to trial termination due to lack of efficacy.
+NCT02664961,"Rare tumor type, patients eligible via expanded access.",deepseek-chat,"{
+    ""nct_id"": ""NCT02664961"",
+    ""primary_reasons"": [""Insufficient Enrolment""],
+    ""reasoning_traces"": {
+        ""Insufficient Enrolment"": [""Evidence: 'Rare tumor type, patients eligible via expanded access.' (why_stopped)"", ""Inference: The explicit mention of 'rare tumor type' indicates the primary challenge was finding enough eligible patients to enroll, which aligns with the Insufficient Enrolment category. The reference to 'expanded access' suggests alternative pathways were available for treatment, making trial continuation unnecessary.""]
+    },
+    ""confidence"": ""High"",
+    ""explanation"": ""Trial terminated due to challenges enrolling patients for a rare tumor type, with alternative treatment access available.""
+}",['Insufficient Enrolment'],"{'Insufficient Enrolment': [""Evidence: 'Rare tumor type, patients eligible via expanded access.' (why_stopped)"", ""Inference: The explicit mention of 'rare tumor type' indicates the primary challenge was finding enough eligible patients to enroll, which aligns with the Insufficient Enrolment category. The reference to 'expanded access' suggests alternative pathways were available for treatment, making trial continuation unnecessary.""]}",High,"Trial terminated due to challenges enrolling patients for a rare tumor type, with alternative treatment access available."
+NCT01222143,,deepseek-chat,"{
+    ""nct_id"": ""NCT01222143"",
+    ""primary_reasons"": [""No Context""],
+    ""reasoning_traces"": {
+        ""No Context"": [""Evidence: 'why_stopped: NaN' (explicitly missing)"", ""Evidence: No termination-related statements found in 'brief_summary'"", ""Evidence: 'detailed_description: NaN' (explicitly missing)"", ""Inference: The record provides no explicit explanation for termination; the 'why_stopped' field is empty, and other fields contain only study design/background information with no mention of termination reasons.""]
+    },
+    ""confidence"": ""High"",
+    ""explanation"": ""The trial record contains no information about why it was terminated, with empty 'why_stopped' and 'detailed_description' fields and no termination context in the summary.""
+}",['No Context'],"{'No Context': [""Evidence: 'why_stopped: NaN' (explicitly missing)"", ""Evidence: No termination-related statements found in 'brief_summary'"", ""Evidence: 'detailed_description: NaN' (explicitly missing)"", ""Inference: The record provides no explicit explanation for termination; the 'why_stopped' field is empty, and other fields contain only study design/background information with no mention of termination reasons.""]}",High,"The trial record contains no information about why it was terminated, with empty 'why_stopped' and 'detailed_description' fields and no termination context in the summary."
+NCT00562887,,deepseek-chat,"{
+    ""nct_id"": ""NCT00562887"",
+    ""primary_reasons"": [""No Context""],
+    ""reasoning_traces"": {
+        ""No Context"": [""Evidence: 'why_stopped: NaN' (why_stopped field)"", ""Evidence: No termination information in brief_summary or detailed_description fields"", ""Inference: The trial record provides no explicit explanation for termination, only stating the study objectives without mentioning why it was stopped.""]
+    },
+    ""confidence"": ""High"",
+    ""explanation"": ""No termination reason provided in any field; only study objectives described without explanation of why trial ended.""
+}",['No Context'],"{'No Context': [""Evidence: 'why_stopped: NaN' (why_stopped field)"", 'Evidence: No termination information in brief_summary or detailed_description fields', 'Inference: The trial record provides no explicit explanation for termination, only stating the study objectives without mentioning why it was stopped.']}",High,No termination reason provided in any field; only study objectives described without explanation of why trial ended.
+NCT00555646,Change of dose regimen (new protocol),deepseek-chat,"{
+    ""nct_id"": ""NCT00555646"",
+    ""primary_reasons"": [""Study Design""],
+    ""reasoning_traces"": {
+        ""Study Design"": [""Evidence: 'Change of dose regimen (new protocol)' (why_stopped)"", ""Inference: The explicit statement indicates the trial was terminated due to a protocol amendment requiring a new dose regimen, which falls under protocol flaws or design amendments in the Study Design category.""]
+    },
+    ""confidence"": ""High"",
+    ""explanation"": ""Trial terminated explicitly due to a protocol change involving dose regimen modification.""
+}",['Study Design'],"{'Study Design': [""Evidence: 'Change of dose regimen (new protocol)' (why_stopped)"", 'Inference: The explicit statement indicates the trial was terminated due to a protocol amendment requiring a new dose regimen, which falls under protocol flaws or design amendments in the Study Design category.']}",High,Trial terminated explicitly due to a protocol change involving dose regimen modification.
+NCT02075021,PI left the institution,deepseek-chat,"{
+    ""nct_id"": ""NCT02075021"",
+    ""primary_reasons"": [""Study Staff Moved""],
+    ""reasoning_traces"": {
+        ""Study Staff Moved"": [""Evidence: \""PI left the institution\"" (why_stopped)"", ""Inference: The why_stopped field explicitly states the Principal Investigator departed, which directly maps to the 'Study Staff Moved' category. No contradictory or additional termination reasons are mentioned in brief_summary or detailed_description.""]
+    },
+    ""confidence"": ""High"",
+    ""explanation"": ""Trial termination was explicitly due to the Principal Investigator leaving the institution, with no evidence of other contributing factors.""
+}",['Study Staff Moved'],"{'Study Staff Moved': ['Evidence: ""PI left the institution"" (why_stopped)', ""Inference: The why_stopped field explicitly states the Principal Investigator departed, which directly maps to the 'Study Staff Moved' category. No contradictory or additional termination reasons are mentioned in brief_summary or detailed_description.""]}",High,"Trial termination was explicitly due to the Principal Investigator leaving the institution, with no evidence of other contributing factors."
+NCT00793650,,deepseek-chat,"{
+    ""nct_id"": ""NCT00793650"",
+    ""primary_reasons"": [""No Context""],
+    ""reasoning_traces"": {
+        ""No Context"": [""Evidence: 'why_stopped: NaN' (why_stopped field)"", ""Evidence: No termination information in brief_summary or detailed_description fields"", ""Inference: The trial record contains no explicit explanation for termination, only stating the study goal without any indication of why it was stopped.""]
+    },
+    ""confidence"": ""High"",
+    ""explanation"": ""No termination reason provided in any field, meeting the 'No Context' category definition.""
+}",['No Context'],"{'No Context': [""Evidence: 'why_stopped: NaN' (why_stopped field)"", 'Evidence: No termination information in brief_summary or detailed_description fields', 'Inference: The trial record contains no explicit explanation for termination, only stating the study goal without any indication of why it was stopped.']}",High,"No termination reason provided in any field, meeting the 'No Context' category definition."
+NCT03670901,The development was stopped due to company's strategy consideration,deepseek-chat,"{
+    ""nct_id"": ""NCT03670901"",
+    ""primary_reasons"": [""Business or Administrative""],
+    ""reasoning_traces"": {
+        ""Business or Administrative"": [""Evidence: \""The development was stopped due to company's strategy consideration\"" (why_stopped)"", ""Inference: The explicit statement cites 'company's strategy consideration' as the reason for stopping development, which directly maps to the Business or Administrative category (sponsor decision, prioritization, or strategic reasons). No contradictory evidence of scientific, safety, or operational issues was found in the brief_summary.""]
+    },
+    ""confidence"": ""High"",
+    ""explanation"": ""Clear statement in why_stopped field indicates termination was due to sponsor's strategic business decision.""
+}",['Business or Administrative'],"{'Business or Administrative': ['Evidence: ""The development was stopped due to company\'s strategy consideration"" (why_stopped)', ""Inference: The explicit statement cites 'company's strategy consideration' as the reason for stopping development, which directly maps to the Business or Administrative category (sponsor decision, prioritization, or strategic reasons). No contradictory evidence of scientific, safety, or operational issues was found in the brief_summary.""]}",High,Clear statement in why_stopped field indicates termination was due to sponsor's strategic business decision.
+NCT00766870,Study was previously paused and is now terminated,deepseek-chat,"{
+    ""nct_id"": ""NCT00766870"",
+    ""primary_reasons"": [""No Context""],
+    ""reasoning_traces"": {
+        ""No Context"": [""Evidence: 'Study was previously paused and is now terminated' (why_stopped)"", ""Inference: The why_stopped field states termination but provides no explanation for why the trial was paused or terminated. The brief_summary and detailed_description describe the trial's purpose and background on MDD but contain no information about termination reasons.""]
+    },
+    ""confidence"": ""High"",
+    ""explanation"": ""The trial record explicitly states termination but provides no explanatory context for why it was terminated.""
+}",['No Context'],"{'No Context': [""Evidence: 'Study was previously paused and is now terminated' (why_stopped)"", ""Inference: The why_stopped field states termination but provides no explanation for why the trial was paused or terminated. The brief_summary and detailed_description describe the trial's purpose and background on MDD but contain no information about termination reasons.""]}",High,The trial record explicitly states termination but provides no explanatory context for why it was terminated.
+NCT00162253,,deepseek-chat,"{
+    ""nct_id"": ""NCT00162253"",
+    ""primary_reasons"": [""No Context""],
+    ""reasoning_traces"": {
+        ""No Context"": [""Evidence: 'why_stopped: NaN' (why_stopped field)"", ""Evidence: 'brief_summary' contains only study purpose with no termination information"", ""Evidence: 'detailed_description: NaN' (detailed_description field)"", ""Inference: No explicit explanation for termination is provided in any field; the 'why_stopped' field is explicitly marked as NaN (Not a Number/empty), and other fields offer no contradictory or explanatory context about termination.""]
+    },
+    ""confidence"": ""High"",
+    ""explanation"": ""The trial record lacks any explicit explanation for termination across all fields, with 'why_stopped' explicitly empty and no contradictory evidence elsewhere.""
+}",['No Context'],"{'No Context': [""Evidence: 'why_stopped: NaN' (why_stopped field)"", ""Evidence: 'brief_summary' contains only study purpose with no termination information"", ""Evidence: 'detailed_description: NaN' (detailed_description field)"", ""Inference: No explicit explanation for termination is provided in any field; the 'why_stopped' field is explicitly marked as NaN (Not a Number/empty), and other fields offer no contradictory or explanatory context about termination.""]}",High,"The trial record lacks any explicit explanation for termination across all fields, with 'why_stopped' explicitly empty and no contradictory evidence elsewhere."
+NCT04326283,Terminated as it is considered that necessary data have been collected,deepseek-chat,"{
+    ""nct_id"": ""NCT04326283"",
+    ""primary_reasons"": [""Endpoint Met""],
+    ""reasoning_traces"": {
+        ""Endpoint Met"": [""Evidence: \""Terminated as it is considered that necessary data have been collected\"" (why_stopped)"", ""Inference: The explicit statement indicates the trial was stopped because sufficient data had been gathered to meet study objectives, which aligns with the 'Endpoint Met' category for early stopping due to adequate data collection.""]
+    },
+    ""confidence"": ""High"",
+    ""explanation"": ""Clear statement that termination occurred because necessary data had been collected, indicating the trial met its data collection objectives.""
+}",['Endpoint Met'],"{'Endpoint Met': ['Evidence: ""Terminated as it is considered that necessary data have been collected"" (why_stopped)', ""Inference: The explicit statement indicates the trial was stopped because sufficient data had been gathered to meet study objectives, which aligns with the 'Endpoint Met' category for early stopping due to adequate data collection.""]}",High,"Clear statement that termination occurred because necessary data had been collected, indicating the trial met its data collection objectives."
+NCT00827671,Experimental treatment not feasible due to high rate of drop out,deepseek-chat,"{
+    ""nct_id"": ""NCT00827671"",
+    ""primary_reasons"": [""Study Design""],
+    ""reasoning_traces"": {
+        ""Study Design"": [""Evidence: \""Experimental treatment not feasible due to high rate of drop out\"" (why_stopped)"", ""Inference: The explicit statement indicates feasibility issues with the experimental treatment protocol due to participant retention problems, which falls under 'feasibility issues' in the Study Design category.""]
+    },
+    ""confidence"": ""High"",
+    ""explanation"": ""Clear evidence in why_stopped field indicates termination due to feasibility issues with the experimental treatment protocol.""
+}",['Study Design'],"{'Study Design': ['Evidence: ""Experimental treatment not feasible due to high rate of drop out"" (why_stopped)', ""Inference: The explicit statement indicates feasibility issues with the experimental treatment protocol due to participant retention problems, which falls under 'feasibility issues' in the Study Design category.""]}",High,Clear evidence in why_stopped field indicates termination due to feasibility issues with the experimental treatment protocol.
+NCT01521143,The study was terminated due to company restructuring and changes in drug development priorities.,deepseek-chat,"{
+    ""nct_id"": ""NCT01521143"",
+    ""primary_reasons"": [""Business or Administrative"", ""Insufficient Enrolment""],
+    ""reasoning_traces"": {
+        ""Business or Administrative"": [""Evidence: \""The study was terminated due to company restructuring and changes in drug development priorities.\"" (why_stopped)"", ""Inference: The explicit statement cites sponsor-level strategic decisions (restructuring, priority changes) as the termination reason, which directly maps to the Business or Administrative category.""],
+        ""Insufficient Enrolment"": [""Evidence: \""As < 10% of the necessary patients required by the protocol were recruited...\"" (brief_summary)"", ""Evidence: \""No efficacy analyses were performed as the trial was terminated early with incomplete enrollment of < 10%.\"" (brief_summary)"", ""Inference: The trial had severe recruitment failure (<10% of target), which is a clear operational barrier that contributed to termination, even if not cited as the sole reason in why_stopped.""]
+    },
+    ""confidence"": ""High"",
+    ""explanation"": ""Termination was explicitly due to sponsor business decisions (restructuring/priorities), but severe enrollment failure (<10% of target) was also documented as a contributing operational factor.""
+}","['Business or Administrative', 'Insufficient Enrolment']","{'Business or Administrative': ['Evidence: ""The study was terminated due to company restructuring and changes in drug development priorities."" (why_stopped)', 'Inference: The explicit statement cites sponsor-level strategic decisions (restructuring, priority changes) as the termination reason, which directly maps to the Business or Administrative category.'], 'Insufficient Enrolment': ['Evidence: ""As < 10% of the necessary patients required by the protocol were recruited..."" (brief_summary)', 'Evidence: ""No efficacy analyses were performed as the trial was terminated early with incomplete enrollment of < 10%."" (brief_summary)', 'Inference: The trial had severe recruitment failure (<10% of target), which is a clear operational barrier that contributed to termination, even if not cited as the sole reason in why_stopped.']}",High,"Termination was explicitly due to sponsor business decisions (restructuring/priorities), but severe enrollment failure (<10% of target) was also documented as a contributing operational factor."
+NCT04529499,Study met pre-defined criteria for futility at interim analysis,deepseek-chat,"{
+    ""nct_id"": ""NCT04529499"",
+    ""primary_reasons"": [""Negative""],
+    ""reasoning_traces"": {
+        ""Negative"": [""Evidence: \""Study met pre-defined criteria for futility at interim analysis\"" (why_stopped)"", ""Inference: The explicit statement of meeting futility criteria at interim analysis directly maps to the 'Negative' category, which includes futility as a reason for termination due to lack of efficacy or unfavorable risk-benefit ratio.""]
+    },
+    ""confidence"": ""High"",
+    ""explanation"": ""Clear, direct evidence from the why_stopped field indicates termination due to futility at interim analysis, with no contradictory information in other fields.""
+}",['Negative'],"{'Negative': ['Evidence: ""Study met pre-defined criteria for futility at interim analysis"" (why_stopped)', ""Inference: The explicit statement of meeting futility criteria at interim analysis directly maps to the 'Negative' category, which includes futility as a reason for termination due to lack of efficacy or unfavorable risk-benefit ratio.""]}",High,"Clear, direct evidence from the why_stopped field indicates termination due to futility at interim analysis, with no contradictory information in other fields."
+NCT01214096,The same protocol has been launched in United States.,deepseek-chat,"{
+    ""nct_id"": ""NCT01214096"",
+    ""primary_reasons"": [""Another Study""],
+    ""reasoning_traces"": {
+        ""Another Study"": [""Evidence: 'The same protocol has been launched in United States.' (why_stopped)"", ""Inference: The explicit statement indicates this trial was terminated because an identical protocol was initiated in another location (United States), making this trial obsolete or redundant.""]
+    },
+    ""confidence"": ""High"",
+    ""explanation"": ""Clear evidence that termination was due to the launch of an identical protocol in another country.""
+}",['Another Study'],"{'Another Study': [""Evidence: 'The same protocol has been launched in United States.' (why_stopped)"", 'Inference: The explicit statement indicates this trial was terminated because an identical protocol was initiated in another location (United States), making this trial obsolete or redundant.']}",High,Clear evidence that termination was due to the launch of an identical protocol in another country.
+NCT02028910,,deepseek-chat,"{
+    ""nct_id"": ""NCT02028910"",
+    ""primary_reasons"": [""No Context""],
+    ""reasoning_traces"": {
+        ""No Context"": [""Evidence: 'why_stopped: NaN' (why_stopped field)"", ""Evidence: No mention of trial termination, completion, or status in 'brief_summary' or 'detailed_description' fields"", ""Inference: The provided text describes only the study background, objectives, and methodology without any information about trial termination. The why_stopped field is explicitly NaN (null/not available), and no termination reasons are mentioned elsewhere in the record.""]
+    },
+    ""confidence"": ""High"",
+    ""explanation"": ""The trial record contains no information about termination - the why_stopped field is empty and no termination context appears in the study descriptions.""
+}",['No Context'],"{'No Context': [""Evidence: 'why_stopped: NaN' (why_stopped field)"", ""Evidence: No mention of trial termination, completion, or status in 'brief_summary' or 'detailed_description' fields"", 'Inference: The provided text describes only the study background, objectives, and methodology without any information about trial termination. The why_stopped field is explicitly NaN (null/not available), and no termination reasons are mentioned elsewhere in the record.']}",High,The trial record contains no information about termination - the why_stopped field is empty and no termination context appears in the study descriptions.
+NCT02990143,Investigator left the Institution,deepseek-chat,"{
+    ""nct_id"": ""NCT02990143"",
+    ""primary_reasons"": [""Study Staff Moved""],
+    ""reasoning_traces"": {
+        ""Study Staff Moved"": [""Evidence: \""Investigator left the Institution\"" (why_stopped)"", ""Inference: The explicit statement in the why_stopped field directly indicates the departure of the Principal Investigator or key study personnel as the reason for termination, with no contradictory evidence found in brief_summary or detailed_description.""]
+    },
+    ""confidence"": ""High"",
+    ""explanation"": ""Trial terminated due to investigator departure from the institution, as explicitly stated in the why_stopped field.""
+}",['Study Staff Moved'],"{'Study Staff Moved': ['Evidence: ""Investigator left the Institution"" (why_stopped)', 'Inference: The explicit statement in the why_stopped field directly indicates the departure of the Principal Investigator or key study personnel as the reason for termination, with no contradictory evidence found in brief_summary or detailed_description.']}",High,"Trial terminated due to investigator departure from the institution, as explicitly stated in the why_stopped field."
+NCT03033316,Patient enrolment issues,deepseek-chat,"{
+    ""nct_id"": ""NCT03033316"",
+    ""primary_reasons"": [""Insufficient Enrolment""],
+    ""reasoning_traces"": {
+        ""Insufficient Enrolment"": [""Evidence: 'Patient enrolment issues' (why_stopped)"", ""Inference: The explicit statement in the why_stopped field directly indicates that enrollment problems were the reason for termination, with no contradictory evidence found in brief_summary or detailed_description.""]
+    },
+    ""confidence"": ""High"",
+    ""explanation"": ""The trial was terminated due to patient enrollment issues as explicitly stated in the why_stopped field.""
+}",['Insufficient Enrolment'],"{'Insufficient Enrolment': [""Evidence: 'Patient enrolment issues' (why_stopped)"", 'Inference: The explicit statement in the why_stopped field directly indicates that enrollment problems were the reason for termination, with no contradictory evidence found in brief_summary or detailed_description.']}",High,The trial was terminated due to patient enrollment issues as explicitly stated in the why_stopped field.
+NCT01438112,Change in study design,deepseek-chat,"{
+    ""nct_id"": ""NCT01438112"",
+    ""primary_reasons"": [""Study Design""],
+    ""reasoning_traces"": {
+        ""Study Design"": [""Evidence: 'Change in study design' (why_stopped)"", ""Evidence: 'After the phase I/II CG0070 trial review, it became apparent that the use of CG0070 oncolytic vaccine... may have distinct advantages' (detailed_description)"", ""Evidence: 'It is therefore, desirable to formulate a protocol to encompass the specialty of this oncolytic vaccine... by a randomized controlled study' (detailed_description)"", ""Inference: The explicit 'why_stopped' reason indicates a design change, supported by the detailed description discussing insights from a previous trial and the need to formulate a new protocol for a randomized controlled study, confirming protocol amendments as the termination reason.""]
+    },
+    ""confidence"": ""High"",
+    ""explanation"": ""Trial terminated due to a change in study design, explicitly stated in the why_stopped field and supported by context about protocol formulation for a randomized controlled study.""
+}",['Study Design'],"{'Study Design': [""Evidence: 'Change in study design' (why_stopped)"", ""Evidence: 'After the phase I/II CG0070 trial review, it became apparent that the use of CG0070 oncolytic vaccine... may have distinct advantages' (detailed_description)"", ""Evidence: 'It is therefore, desirable to formulate a protocol to encompass the specialty of this oncolytic vaccine... by a randomized controlled study' (detailed_description)"", ""Inference: The explicit 'why_stopped' reason indicates a design change, supported by the detailed description discussing insights from a previous trial and the need to formulate a new protocol for a randomized controlled study, confirming protocol amendments as the termination reason.""]}",High,"Trial terminated due to a change in study design, explicitly stated in the why_stopped field and supported by context about protocol formulation for a randomized controlled study."
+NCT01325584,Alternative product is now approved and available for use.,deepseek-chat,"{
+    ""nct_id"": ""NCT01325584"",
+    ""primary_reasons"": [""Another Study""],
+    ""reasoning_traces"": {
+        ""Another Study"": [""Evidence: \""Alternative product is now approved and available for use.\"" (why_stopped)"", ""Inference: The explicit statement indicates an external product approval made this compassionate use trial obsolete, as the investigational product is no longer needed for access.""]
+    },
+    ""confidence"": ""High"",
+    ""explanation"": ""Trial terminated because an alternative product received regulatory approval, rendering the study unnecessary.""
+}",['Another Study'],"{'Another Study': ['Evidence: ""Alternative product is now approved and available for use."" (why_stopped)', 'Inference: The explicit statement indicates an external product approval made this compassionate use trial obsolete, as the investigational product is no longer needed for access.']}",High,"Trial terminated because an alternative product received regulatory approval, rendering the study unnecessary."
+NCT00243204,FDA Hold May 2007,deepseek-chat,"{
+    ""nct_id"": ""NCT00243204"",
+    ""primary_reasons"": [""Regulatory""],
+    ""reasoning_traces"": {
+        ""Regulatory"": [""Evidence: 'FDA Hold May 2007' (why_stopped)"", ""Inference: The explicit mention of 'FDA Hold' indicates a regulatory action by the U.S. Food and Drug Administration that halted the trial, which directly maps to the Regulatory category in the taxonomy.""]
+    },
+    ""confidence"": ""High"",
+    ""explanation"": ""Trial terminated due to an FDA clinical hold, which is a clear regulatory action.""
+}",['Regulatory'],"{'Regulatory': [""Evidence: 'FDA Hold May 2007' (why_stopped)"", ""Inference: The explicit mention of 'FDA Hold' indicates a regulatory action by the U.S. Food and Drug Administration that halted the trial, which directly maps to the Regulatory category in the taxonomy.""]}",High,"Trial terminated due to an FDA clinical hold, which is a clear regulatory action."
+NCT00005608,Drug was pulled from the market.,deepseek-chat,"{
+    ""nct_id"": ""NCT00005608"",
+    ""primary_reasons"": [""Logistics or Resources""],
+    ""reasoning_traces"": {
+        ""Logistics or Resources"": [""Evidence: 'Drug was pulled from the market.' (why_stopped)"", ""Inference: The explicit statement that the drug was 'pulled from the market' indicates a supply chain/manufacturing issue that prevented trial continuation, which falls under 'Drug supply shortage, manufacturing failure' in the Logistics or Resources category.""]
+    },
+    ""confidence"": ""High"",
+    ""explanation"": ""Clear, direct evidence that the trial was terminated because the investigational drug was withdrawn from commercial availability.""
+}",['Logistics or Resources'],"{'Logistics or Resources': [""Evidence: 'Drug was pulled from the market.' (why_stopped)"", ""Inference: The explicit statement that the drug was 'pulled from the market' indicates a supply chain/manufacturing issue that prevented trial continuation, which falls under 'Drug supply shortage, manufacturing failure' in the Logistics or Resources category.""]}",High,"Clear, direct evidence that the trial was terminated because the investigational drug was withdrawn from commercial availability."
+NCT04212221,Due to the rapid shifting of liver cancer disease landscape and the company's adjustment of development strategy.,deepseek-chat,"{
+    ""nct_id"": ""NCT04212221"",
+    ""primary_reasons"": [""Business or Administrative"", ""Another Study""],
+    ""reasoning_traces"": {
+        ""Business or Administrative"": [""Evidence: \""the company's adjustment of development strategy\"" (why_stopped)"", ""Inference: This explicitly states a sponsor-driven strategic decision, which falls under Business or Administrative category.""],
+        ""Another Study"": [""Evidence: \""Due to the rapid shifting of liver cancer disease landscape\"" (why_stopped)"", ""Inference: This suggests external developments in the field (likely new treatments or standards of care) made this trial obsolete, which aligns with the Another Study category.""]
+    },
+    ""confidence"": ""Medium"",
+    ""explanation"": ""Termination driven by both external landscape changes and internal strategic adjustments, though the exact nature of the external changes isn't specified.""
+}","['Business or Administrative', 'Another Study']","{'Business or Administrative': ['Evidence: ""the company\'s adjustment of development strategy"" (why_stopped)', 'Inference: This explicitly states a sponsor-driven strategic decision, which falls under Business or Administrative category.'], 'Another Study': ['Evidence: ""Due to the rapid shifting of liver cancer disease landscape"" (why_stopped)', 'Inference: This suggests external developments in the field (likely new treatments or standards of care) made this trial obsolete, which aligns with the Another Study category.']}",Medium,"Termination driven by both external landscape changes and internal strategic adjustments, though the exact nature of the external changes isn't specified."
+NCT04939701,"The comprehensive assessment of other studies indicated the lack of significant monotherapy activity, therefore, team decided to terminate the study.",deepseek-chat,"{
+    ""nct_id"": ""NCT04939701"",
+    ""primary_reasons"": [""Negative""],
+    ""reasoning_traces"": {
+        ""Negative"": [""Evidence: \""The comprehensive assessment of other studies indicated the lack of significant monotherapy activity\"" (why_stopped)"", ""Inference: The explicit statement about 'lack of significant monotherapy activity' directly indicates lack of efficacy, which maps to the Negative category (futility/risk-benefit no longer favorable).""]
+    },
+    ""confidence"": ""High"",
+    ""explanation"": ""Clear statement in why_stopped field indicates termination due to lack of monotherapy efficacy based on assessment of other studies.""
+}",['Negative'],"{'Negative': ['Evidence: ""The comprehensive assessment of other studies indicated the lack of significant monotherapy activity"" (why_stopped)', ""Inference: The explicit statement about 'lack of significant monotherapy activity' directly indicates lack of efficacy, which maps to the Negative category (futility/risk-benefit no longer favorable).""]}",High,Clear statement in why_stopped field indicates termination due to lack of monotherapy efficacy based on assessment of other studies.
+NCT00909363,retirement of PI,deepseek-chat,"{
+    ""nct_id"": ""NCT00909363"",
+    ""primary_reasons"": [""Study Staff Moved""],
+    ""reasoning_traces"": {
+        ""Study Staff Moved"": [""Evidence: \""retirement of PI\"" (why_stopped)"", ""Inference: The explicit statement in the why_stopped field directly indicates the trial was terminated due to the departure of the Principal Investigator, with no contradictory evidence found in other fields.""]
+    },
+    ""confidence"": ""High"",
+    ""explanation"": ""Trial terminated explicitly due to Principal Investigator retirement, with no evidence suggesting other primary reasons.""
+}",['Study Staff Moved'],"{'Study Staff Moved': ['Evidence: ""retirement of PI"" (why_stopped)', 'Inference: The explicit statement in the why_stopped field directly indicates the trial was terminated due to the departure of the Principal Investigator, with no contradictory evidence found in other fields.']}",High,"Trial terminated explicitly due to Principal Investigator retirement, with no evidence suggesting other primary reasons."
+NCT00519831,Drug unavailable,deepseek-chat,"{
+    ""nct_id"": ""NCT00519831"",
+    ""primary_reasons"": [""Logistics or Resources""],
+    ""reasoning_traces"": {
+        ""Logistics or Resources"": [""Evidence: 'Drug unavailable' (why_stopped)"", ""Inference: The explicit statement 'Drug unavailable' directly indicates a supply or manufacturing issue with the study medication, which falls under the Logistics or Resources category.""]
+    },
+    ""confidence"": ""High"",
+    ""explanation"": ""Trial terminated solely due to drug unavailability, with no contradictory evidence in other fields.""
+}",['Logistics or Resources'],"{'Logistics or Resources': [""Evidence: 'Drug unavailable' (why_stopped)"", ""Inference: The explicit statement 'Drug unavailable' directly indicates a supply or manufacturing issue with the study medication, which falls under the Logistics or Resources category.""]}",High,"Trial terminated solely due to drug unavailability, with no contradictory evidence in other fields."
+NCT00204152,PI left U of C,deepseek-chat,"{
+    ""nct_id"": ""NCT00204152"",
+    ""primary_reasons"": [""Study Staff Moved""],
+    ""reasoning_traces"": {
+        ""Study Staff Moved"": [""Evidence: \""PI left U of C\"" (why_stopped)"", ""Inference: The explicit statement indicates the Principal Investigator departed from the University of C, which directly corresponds to the 'Study Staff Moved' category.""]
+    },
+    ""confidence"": ""High"",
+    ""explanation"": ""Trial terminated explicitly due to the Principal Investigator leaving the institution.""
+}",['Study Staff Moved'],"{'Study Staff Moved': ['Evidence: ""PI left U of C"" (why_stopped)', ""Inference: The explicit statement indicates the Principal Investigator departed from the University of C, which directly corresponds to the 'Study Staff Moved' category.""]}",High,Trial terminated explicitly due to the Principal Investigator leaving the institution.
+NCT03628079,Lack of effect,deepseek-chat,"{
+    ""nct_id"": ""NCT03628079"",
+    ""primary_reasons"": [""Negative""],
+    ""reasoning_traces"": {
+        ""Negative"": [""Evidence: 'Lack of effect' (why_stopped)"", ""Inference: The explicit statement 'Lack of effect' directly indicates the trial was terminated due to insufficient efficacy or futility, which maps precisely to the 'Negative' category (lack of efficacy, futility, or unfavorable risk-benefit ratio).""]
+    },
+    ""confidence"": ""High"",
+    ""explanation"": ""The trial was terminated due to 'Lack of effect,' which is a clear and direct statement of insufficient efficacy, aligning with the Negative category.""
+}",['Negative'],"{'Negative': [""Evidence: 'Lack of effect' (why_stopped)"", ""Inference: The explicit statement 'Lack of effect' directly indicates the trial was terminated due to insufficient efficacy or futility, which maps precisely to the 'Negative' category (lack of efficacy, futility, or unfavorable risk-benefit ratio).""]}",High,"The trial was terminated due to 'Lack of effect,' which is a clear and direct statement of insufficient efficacy, aligning with the Negative category."
+NCT02525302,Dosing stopped,deepseek-chat,"{
+    ""nct_id"": ""NCT02525302"",
+    ""primary_reasons"": [""No Context""],
+    ""reasoning_traces"": {
+        ""No Context"": [""Evidence: \""Dosing stopped\"" (why_stopped)"", ""Inference: The provided termination reason is extremely vague and lacks any explanatory context about why dosing was stopped. No additional evidence in brief_summary or detailed_description clarifies the specific reason for termination - these sections only describe the study design and potential future termination scenarios.""]
+    },
+    ""confidence"": ""High"",
+    ""explanation"": ""The termination reason provided is completely non-specific ('Dosing stopped') with no supporting evidence in other fields to determine the actual cause.""
+}",['No Context'],"{'No Context': ['Evidence: ""Dosing stopped"" (why_stopped)', 'Inference: The provided termination reason is extremely vague and lacks any explanatory context about why dosing was stopped. No additional evidence in brief_summary or detailed_description clarifies the specific reason for termination - these sections only describe the study design and potential future termination scenarios.']}",High,The termination reason provided is completely non-specific ('Dosing stopped') with no supporting evidence in other fields to determine the actual cause.
+NCT01566630,"Novartis terminated this study due to internal, strategic decisions.",deepseek-chat,"{
+    ""nct_id"": ""NCT01566630"",
+    ""primary_reasons"": [""Business or Administrative""],
+    ""reasoning_traces"": {
+        ""Business or Administrative"": [""Evidence: 'Novartis terminated this study due to internal, strategic decisions.' (why_stopped)"", ""Inference: The explicit statement cites 'internal, strategic decisions' by the sponsor (Novartis), which directly maps to the Business or Administrative category without mentioning scientific, safety, or operational issues.""]
+    },
+    ""confidence"": ""High"",
+    ""explanation"": ""Clear sponsor-driven termination explicitly attributed to strategic decisions without evidence of scientific, safety, or operational factors.""
+}",['Business or Administrative'],"{'Business or Administrative': [""Evidence: 'Novartis terminated this study due to internal, strategic decisions.' (why_stopped)"", ""Inference: The explicit statement cites 'internal, strategic decisions' by the sponsor (Novartis), which directly maps to the Business or Administrative category without mentioning scientific, safety, or operational issues.""]}",High,"Clear sponsor-driven termination explicitly attributed to strategic decisions without evidence of scientific, safety, or operational factors."
+NCT00346151,Stopping rule-acute rejection threshold-was met based on local biopsy results,deepseek-chat,"{
+    ""nct_id"": ""NCT00346151"",
+    ""primary_reasons"": [""Negative""],
+    ""reasoning_traces"": {
+        ""Negative"": [""Evidence: \""Stopping rule-acute rejection threshold-was met based on local biopsy results\"" (why_stopped)"", ""Inference: The stopping rule was triggered by meeting the acute rejection threshold, indicating lack of efficacy (futility) or unfavorable risk-benefit ratio as the treatment failed to prevent rejection as intended.""]
+    },
+    ""confidence"": ""High"",
+    ""explanation"": ""The trial was terminated because a pre-defined stopping rule for acute rejection was met, indicating treatment failure.""
+}",['Negative'],"{'Negative': ['Evidence: ""Stopping rule-acute rejection threshold-was met based on local biopsy results"" (why_stopped)', 'Inference: The stopping rule was triggered by meeting the acute rejection threshold, indicating lack of efficacy (futility) or unfavorable risk-benefit ratio as the treatment failed to prevent rejection as intended.']}",High,"The trial was terminated because a pre-defined stopping rule for acute rejection was met, indicating treatment failure."

@@ -1,0 +1,64 @@
+nct_id,input_why_stopped,model,raw_response,primary_reasons,reasoning_traces,confidence,explanation
+PROVIDED_ID_NOT_SPECIFIED,The total number of patients has been reached.,deepseek-reasoner,"{
+  ""nct_id"": ""PROVIDED_ID_NOT_SPECIFIED"",
+  ""primary_reasons"": [""ENROLLMENT""],
+  ""reasoning_traces"": {
+    ""ENROLLMENT"": [""Evidence: 'The total number of patients has been reached.' (why_stopped)"", ""Inference: This statement directly indicates that the trial was terminated because the target enrollment was achieved, with no contradictory evidence in brief_summary or detailed_description fields.""]
+  },
+  ""confidence"": ""High"",
+  ""explanation"": ""Clear evidence from the why_stopped field that termination was due to reaching the enrollment target.""
+}",['ENROLLMENT'],"{'ENROLLMENT': [""Evidence: 'The total number of patients has been reached.' (why_stopped)"", 'Inference: This statement directly indicates that the trial was terminated because the target enrollment was achieved, with no contradictory evidence in brief_summary or detailed_description fields.']}",High,Clear evidence from the why_stopped field that termination was due to reaching the enrollment target.
+INSERT_NCT_ID_HERE,,deepseek-reasoner,"{
+  ""nct_id"": ""INSERT_NCT_ID_HERE"",
+  ""primary_reasons"": [""UNKNOWN_INSUFFICIENT_INFO""],
+  ""reasoning_traces"": {
+    ""UNKNOWN_INSUFFICIENT_INFO"": [
+      ""Evidence: 'nan' (why_stopped)"",
+      ""Evidence: No mention of termination in brief_summary: 'The purpose of this study is to evaluate the safety, immunogenicity, and antiviral effects of multiple intravenous doses of ANZ-521 in patients with chronic Hepatitis C virus.'"",
+      ""Inference: The why_stopped field is empty or missing ('nan'), and no explanatory context about termination is provided in brief_summary or detailed_description, indicating insufficient information to determine any specific reason.""
+    ]
+  },
+  ""confidence"": ""High"",
+  ""explanation"": ""Missing or vague termination reason with no supporting evidence in the provided trial fields.""
+}",['UNKNOWN_INSUFFICIENT_INFO'],"{'UNKNOWN_INSUFFICIENT_INFO': [""Evidence: 'nan' (why_stopped)"", ""Evidence: No mention of termination in brief_summary: 'The purpose of this study is to evaluate the safety, immunogenicity, and antiviral effects of multiple intravenous doses of ANZ-521 in patients with chronic Hepatitis C virus.'"", ""Inference: The why_stopped field is empty or missing ('nan'), and no explanatory context about termination is provided in brief_summary or detailed_description, indicating insufficient information to determine any specific reason.""]}",High,Missing or vague termination reason with no supporting evidence in the provided trial fields.
+INSERT_NCT_ID_HERE,,deepseek-reasoner,"{
+  ""nct_id"": ""INSERT_NCT_ID_HERE"",
+  ""primary_reasons"": [""UNKNOWN_INSUFFICIENT_INFO""],
+  ""reasoning_traces"": {
+    ""UNKNOWN_INSUFFICIENT_INFO"": [
+      ""Evidence: 'INSERT_WHY_STOPPED_TEXT_HERE' in why_stopped field, which is a placeholder with no actual termination reason provided."",
+      ""Evidence: 'INSERT_BRIEF_SUMMARY_TEXT_HERE' in brief_summary field, which is empty with no explanatory context."",
+      ""Evidence: The detailed_description contains methods text ('Methods: 103 participants, after being randomized to medical versus sham acupuncture received bi-weekly treatments for 5 weeks, after a baseline assessment week. They were then followed for an additional 7 weeks. Participants completed daily hot flash questionnaires, which formed the basis for analysis.'), but it describes study conduct without mentioning termination."",
+      ""Inference: No text in any field provides evidence for why the trial was terminated, leading to insufficient information to assign a specific category.""
+    ]
+  },
+  ""confidence"": ""High"",
+  ""explanation"": ""No termination reason provided in any field, with only study methods described in detailed_description.""
+}",['UNKNOWN_INSUFFICIENT_INFO'],"{'UNKNOWN_INSUFFICIENT_INFO': [""Evidence: 'INSERT_WHY_STOPPED_TEXT_HERE' in why_stopped field, which is a placeholder with no actual termination reason provided."", ""Evidence: 'INSERT_BRIEF_SUMMARY_TEXT_HERE' in brief_summary field, which is empty with no explanatory context."", ""Evidence: The detailed_description contains methods text ('Methods: 103 participants, after being randomized to medical versus sham acupuncture received bi-weekly treatments for 5 weeks, after a baseline assessment week. They were then followed for an additional 7 weeks. Participants completed daily hot flash questionnaires, which formed the basis for analysis.'), but it describes study conduct without mentioning termination."", 'Inference: No text in any field provides evidence for why the trial was terminated, leading to insufficient information to assign a specific category.']}",High,"No termination reason provided in any field, with only study methods described in detailed_description."
+INSERT_NCT_ID_HERE,Study may continue,deepseek-reasoner,"{
+  ""nct_id"": ""INSERT_NCT_ID_HERE"",
+  ""primary_reasons"": [""UNKNOWN_INSUFFICIENT_INFO""],
+  ""reasoning_traces"": {
+    ""UNKNOWN_INSUFFICIENT_INFO"": [
+      ""Evidence: 'Study may continue' (why_stopped)"",
+      ""Evidence: No explanatory context in brief_summary or detailed_description fields."",
+      ""Inference: The why_stopped field contains a vague phrase that does not indicate a clear reason for termination, and no other fields provide additional information to categorize the reason based on the taxonomy.""
+    ]
+  },
+  ""confidence"": ""High"",
+  ""explanation"": ""Vague termination statement with no supporting evidence in any field to infer specific categories.""
+}",['UNKNOWN_INSUFFICIENT_INFO'],"{'UNKNOWN_INSUFFICIENT_INFO': [""Evidence: 'Study may continue' (why_stopped)"", 'Evidence: No explanatory context in brief_summary or detailed_description fields.', 'Inference: The why_stopped field contains a vague phrase that does not indicate a clear reason for termination, and no other fields provide additional information to categorize the reason based on the taxonomy.']}",High,Vague termination statement with no supporting evidence in any field to infer specific categories.
+INSERT_NCT_ID_HERE,,deepseek-reasoner,"{
+  ""nct_id"": ""INSERT_NCT_ID_HERE"",
+  ""primary_reasons"": [""UNKNOWN_INSUFFICIENT_INFO""],
+  ""reasoning_traces"": {
+    ""UNKNOWN_INSUFFICIENT_INFO"": [
+      ""Evidence: 'INSERT_WHY_STOPPED_TEXT_HERE' (why_stopped)"",
+      ""Evidence: 'INSERT_BRIEF_SUMMARY_TEXT_HERE' (brief_summary)"",
+      ""Evidence: 'INSERT_DETAILED_DESCRIPTION_TEXT_HERE' (detailed_description)"",
+      ""Inference: All provided fields contain placeholder text with no explanatory context about trial termination. Additional descriptive text ('Approximately 30 patients will be enrolled...') outlines study design but does not mention termination, confirming insufficient information to categorize a specific reason.""
+    ]
+  },
+  ""confidence"": ""High"",
+  ""explanation"": ""Termination reason is missing as all relevant fields contain placeholder text with no supporting evidence for any specific category.""
+}",['UNKNOWN_INSUFFICIENT_INFO'],"{'UNKNOWN_INSUFFICIENT_INFO': [""Evidence: 'INSERT_WHY_STOPPED_TEXT_HERE' (why_stopped)"", ""Evidence: 'INSERT_BRIEF_SUMMARY_TEXT_HERE' (brief_summary)"", ""Evidence: 'INSERT_DETAILED_DESCRIPTION_TEXT_HERE' (detailed_description)"", ""Inference: All provided fields contain placeholder text with no explanatory context about trial termination. Additional descriptive text ('Approximately 30 patients will be enrolled...') outlines study design but does not mention termination, confirming insufficient information to categorize a specific reason.""]}",High,Termination reason is missing as all relevant fields contain placeholder text with no supporting evidence for any specific category.

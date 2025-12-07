@@ -12,7 +12,7 @@ Responsibility: Project standards and constraints.
 -   **NCT ID**: Unique identifier for studies (e.g., `NCT00666029`).
 -   **Terminated**: `overall_status` == "TERMINATED".
 
-## Taxonomy (Termination Reasons)
+## Taxonomy: Termination Reasons (Phase 1a)
 Strict priority order for Regex:
 1.  **COVID** -> Exclude.
 2.  **Mislabeled** -> "Completed", "Successfully finished".
@@ -21,3 +21,13 @@ Strict priority order for Regex:
 5.  **Safety** -> "Safety", "Adverse events".
 6.  **Efficacy** -> "Efficacy", "Futile".
 7.  **Other/Unclear** -> Fallback category. Needs LLM.
+
+## Medical Field Classification (Phase 1b)
+-   **Source Hierarchy**: MeSH terms (browse_conditions) → Conditions → Title/Summary
+-   **Field Mappings**: 15+ specialties including:
+    -   Oncology, Cardiology, Neurology, Infectious Disease
+    -   Immunology, Hematology, Nephrology, Rheumatology
+    -   Pulmonology, Gastroenterology, Endocrinology
+    -   Psychiatry, Dermatology, Ophthalmology, Other
+-   **Subfield Extraction**: Extracts specific conditions/diseases within each field
+-   **Pattern Matching**: Case-insensitive keyword matching against curated medical term lists
