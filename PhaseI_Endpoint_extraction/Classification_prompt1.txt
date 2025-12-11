@@ -71,9 +71,4 @@ You MUST output a valid JSON object with this exact structure:
 }
 
 **NOW, ANALYZE THE FOLLOWING TRIAL RECORD:**
-{
-  "nct_id": "INSERT_NCT_ID_HERE",
-  "why_stopped": "INSERT_WHY_STOPPED_TEXT_HERE",
-  "brief_summary": "INSERT_BRIEF_SUMMARY_TEXT_HERE",
-  "detailed_description": "INSERT_DETAILED_DESCRIPTION_TEXT_HERE"
-}
+{trials}

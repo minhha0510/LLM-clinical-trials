@@ -1,18 +1,27 @@
 # Codemap: Key Dependencies (auto-maintained by LLM)
-Last updated: 2025-12-06
+Last updated: 2025-12-11
 Responsibility: External services, files, and libraries.
 
 ## Local Data Dependencies
--   **`CT_data_full/main_data/`**: MUST exist. Scripts rely on specific filenames:
-    -   `studies.txt`, `designs.txt` - Core trial metadata
-    -   `brief_summaries.txt`, `detailed_descriptions.txt` - Trial descriptions
-    -   `browse_conditions.txt` - MeSH (Medical Subject Headings) terms **[Critical for Phase 1b]**
-    -   `conditions.txt` - Condition names (fallback for classification)
--   **`Data-dict/`**: Reference for schema.
+-   **`CT_data_full/main_data/`**: Source of truth. Scripts often hardcode this path.
+    -   `CT_data_full/main_data/`: (Read-Only) Source of truth for `studies.txt`, `browse_conditions.txt`.
+-   `Data-dict/`: (Read-Only) Schema references.
+-   `Pilot_datasets/`: Input for analysis and prediction phases.
+-   `Prediction/`:
+    -   `pilot_prompts.json`: Generated prompts for LLM.
+    -   `Prediction_prompts_instruct.txt`: System instruction template.
 
-## Library Dependencies
--   **Pandas**: Required for efficient CSV/Text processing.
--   **Python stdlib**: `csv`, `os`, `re` (regex for pattern matching).
+## 2. External Services
+-   **DeepSeek API**:
+    -   **Context**: Phase 1c (Analysis) and Phase 2 (Prediction).
+    -   **Model**: `deepseek-chat` (or `deepseek-reasoner`).
+    -   **Client**: Accessed via `openai` Python library.
+-   **OpenAI API**: Fallback/Alternative.
 
-## Environment
--   **`.env`**: Configuration (likely for API keys in future).
+## 3. Libraries
+-   **Pandas**: Data manipulation (ETL).
+-   **OpenAI**: API Client for DeepSeek.
+-   **Python stdlib**: `re`, `json`, `os`, `time`.
+
+## 4. Environment
+-   `.env`: MUST contain `DEEPSEEK_API_KEY` and/or `OPENAI_API_KEY`.

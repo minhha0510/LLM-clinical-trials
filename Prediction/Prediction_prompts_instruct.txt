@@ -1,0 +1,50 @@
+You are an expert analyst of clinical trial documents. Your task is to predict why a clinical trial was most likely terminated or stopped early, using only the information provided in the trial description (title, phase, brief summary, objectives, and any other available text). Do NOT invent information.
+
+Possible termination categories (choose exactly one):
+- "Enrollment" → trial stopped due to slow or insufficient patient recruitment
+- "Administrative" → business decision, regulatory issue, sponsor decision, funding, strategic reprioritization, etc.
+- "Safety" → stopped due to unacceptable toxicity, adverse events, or safety concerns
+- "Efficacy" → stopped due to lack of efficacy, futility, or overwhelmingly negative efficacy results
+
+Output must be valid JSON only, with these exact fields:
+{
+  "prediction": "Enrollment" | "Administrative" | "Safety" | "Efficacy",
+  "reason": "short, evidence-based explanation quoting or directly referencing specific phrases from the input text",
+  "confidence": 0 | 0.5 | 1
+}
+
+### Few-shot examples
+
+Example 1  
+Input: Trial ID: NCT01668680  
+Title: Maintenance Metronomic Chemotherapy for Metastatic Colorectal Carcinoma  
+Phase: PHASE2  
+Brief Summary: Colorectal cancer patients with metastases at response under expensive chemotherapy which may be toxic +/- exhausting are candidates for an effective and more convenient maintenance treatment... Persistent remission, either complete, partial or minimal response or stable disease, one year +/- one month from initiation of first-line treatment... Inability to adhere to monthly visits...  
+{"prediction": "Enrollment", "reason": "Highly restrictive inclusion window of 'one year +/- one month' in remission combined with 'Inability to adhere to monthly visits' as exclusion makes recruitment extremely difficult in metastatic colorectal cancer population.", "confidence": 1}
+
+Example 2  
+Input: Trial ID: NCT00243204  
+Title: Study of Talabostat + Docetaxel Versus Docetaxel in Stage IIIB/IV NSCLC After Failure of Platinum-Based Chemotherapy  
+Phase: PHASE3  
+Brief Summary: This Phase 3 study will compare the efficacy of talabostat plus docetaxel to docetaxel plus placebo...  
+{"prediction": "Administrative", "reason": "Large Phase 3 NSCLC trial with no mention of safety signals or recruitment problems in the description; such trials are frequently terminated for strategic/regulatory/sponsor decisions when the compound is deprioritized.", "confidence": 1}
+
+Example 3  
+Input: Trial ID: NCT03125200  
+Title: Study of ADCT-502 in Patients With Advanced Solid Tumors With HER2 Expression  
+Phase: PHASE1  
+Brief Summary: This study evaluated ADCT-502... dose-escalation phase (Part 1)... the study was terminated prior to the beginning of Part 2... After multiple challenges of trial conduct, by mutual agreement between investigators and sponsor, dose escalation ended...  
+{"prediction": "Administrative", "reason": "Explicit statement 'terminated prior to the beginning of Part 2' and 'multiple challenges of trial conduct, by mutual agreement between investigators and sponsor' clearly points to operational/administrative termination rather than safety or efficacy.", "confidence": 1}
+
+Example 4  
+Input: Trial ID: NCT02990143  
+Title: The Effectiveness of Ologen® Collagen Matrix in Preventing Intraocular Pressure (IOP) Spikes After Ahmed Glaucoma Valve Surgery  
+Phase: PHASE2  
+Brief Summary: ...investigate whether placing Ologen over the posterior plate... Study staff moved.  
+{"prediction": "Administrative", "reason": "Brief summary ends with the explicit note 'Study staff moved', indicating logistical/administrative reason for termination.", "confidence": 1}
+
+### Now predict for the following trial
+
+{input_text}
+
+Return only the JSON.

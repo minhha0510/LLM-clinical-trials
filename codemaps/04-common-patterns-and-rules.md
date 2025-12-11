@@ -1,6 +1,12 @@
 # Codemap: Common Patterns and Rules (auto-maintained by LLM)
-Last updated: 2025-12-06
+Last updated: 2025-12-11
 Responsibility: Project standards and constraints.
+
+## Directory Structure Rules
+1.  **ETL Logic** -> `Dataset_building/`. Do NOT put heavy processing scripts in root.
+2.  **Experiments** -> `PhaseI_Endpoint_extraction/` or `Prediction/`.
+3.  **Outputs** -> `Final_data_sets/` (for verified data) or `Pilot_datasets/` (for subsets).
+4.  **Raw Data** -> `CT_data_full/`. READ-ONLY. Never write here.
 
 ## Data Handling
 -   **Separators**: Raw files use `|`.
@@ -31,3 +37,32 @@ Strict priority order for Regex:
     -   Psychiatry, Dermatology, Ophthalmology, Other
 -   **Subfield Extraction**: Extracts specific conditions/diseases within each field
 -   **Pattern Matching**: Case-insensitive keyword matching against curated medical term lists
+
+## Phase 2: Prediction Patterns
+### `Prediction/`
+-   **Purpose**: Operational prediction pipeline.
+-   **Contents**: `prepare_llm_input.py`, `run_predictions.py`, prompt templates.
+
+## 4. Prompt Engineering (Phase 2)
+Structured format used for LLM input:
+
+```text
+Trial ID: {nct_id}
+Title: {brief_title}
+Phase: {phase}
+Medical Field: {medical_field} - {medical_subfield}
+
+Brief Summary:
+{brief_summary}
+
+Eligibility Criteria:
+{criteria}
+```
+**Rule**: Do NOT include the ground truth outcome in the `input_text` field sent to the LLM.
+
+## 5. LLM Interaction Rules
+-   **Client**: Use `openai` library (compatible with DeepSeek).
+-   **Endpoint**: `https://api.deepseek.com`.
+-   **Response Format**: Always enforce `{"type": "json_object"}`.
+-   **Parsing**: Use `json.loads()` on the response content.
+-   **Error Handling**: Wrap API calls in `try/except` and log errors without crashing the batch.

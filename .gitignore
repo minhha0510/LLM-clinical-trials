@@ -3,6 +3,7 @@
 
 # Large data directories
 CT_data_full/
+GEMINI_VERTEX_API_KEY.txt
 
 # Large CSV files (share separately with collaborators)
 terminated_ground_truth.csv
